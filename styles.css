@@ -1,0 +1,716 @@
+/* css styles */
+
+/* Edit logo on navbar*/
+.navbar-brand img {
+  height: 60px;
+  max-height: none;
+}
+
+.image-card {
+  position: relative;
+  height: 450px; /* was 400px */
+  border-radius: 12px;
+  overflow: hidden;
+  background-image: url('images/primary_productivity.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.image-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* dim overlay */
+}
+
+.overlay-card {
+  position: relative;
+  z-index: 2;
+  padding: 2rem;
+  color: white; /* <-- makes all text inside white */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.overlay-card h2 {
+  font-size: 1.6rem; /* <-- larger headline */
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: white; /* ensures title is white */
+}
+
+.overlay-card p {
+  font-size: 1.125rem; /* Try 1.4rem or larger if needed */
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+.btn-primary,
+.btn-secondary {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;       /* Larger padding = bigger button */
+  margin-right: 1rem;
+  border-radius: 8px;
+  font-size: 1rem;           /* Larger font */
+  text-decoration: none;
+  background-color: #0271d2;    /* Blue background */
+  color: white;                 /* White text */
+  border: none;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+  background-color: #004785;    /* Darker blue on hover */
+  color: white;
+}
+
+.news-card {
+  height: 450px;
+  background-color: #f9fafc;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  font-size: 1.15rem;  /* Increase base font size */
+  line-height: 1.7;
+  overflow-y: auto;
+}
+
+.news-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.news-header h3 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.news-header a {
+  font-size: 0.95rem;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.news-header a:hover {
+  text-decoration: underline;
+}
+
+.news-item {
+  margin-bottom: 1.8rem;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 1rem;
+}
+
+.news-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.news-item strong {
+  font-size: 1.05rem;
+}
+
+.news-item a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.news-item a:hover {
+  text-decoration: underline;
+}
+
+.news-date {
+  font-size: 1rem;     /* Slightly larger date */
+  color: #555;
+  margin-top: 0.4rem;
+}
+
+.news-title {
+  font-weight: bold;
+  font-size: 1.1rem;  /* Larger title */
+  margin-bottom: 0.4rem;
+  margin-top: 0;
+  color: #014077; 
+}
+
+/* bottom-row sub-cards */
+.card {
+  background: white;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 0 12px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card .btn-primary {
+  margin-top: auto;
+  align-self: start;
+}
+
+/* ——— Increase overall card text size ——— */
+.card {
+  font-size: 1rem;       /* ~18px; adjust up/down as needed */
+  line-height: 1.4;          /* improve readability */
+}
+
+/* ——— Make the card titles larger & darker ——— */
+.card h3 {
+  font-size: 1.25rem;         /* ~24px; feel free to tweak */
+  font-weight: 700;          /* bolden the title */
+  color: #1a1a1a;            /* a deep charcoal; darker than default */
+  margin-bottom: 0.5rem;     /* add some breathing room */
+}
+
+/* ——— Tweak paragraph spacing ——— */
+.card p {
+  margin-bottom: 1rem;       /* separate text from the button */
+  color: #333;               /* slightly lighter than the title */
+}
+
+/* For data catalog */
+.filter-btn {
+  background: #e6e6e6;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.filter-btn:hover {
+  background: #d0d0d0;
+}
+
+.category-filter {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius:20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;   /* horizontal centering */
+  align-items: center;       /* vertical centering */
+  margin-bottom: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  line-height: 20px;
+  text-size-adjust: 100%;
+}
+
+.category-filter label {
+  font-size: 1rem;
+  display: inline-flex;    /* controls the horizontal position of text */
+  align-items: center;
+  gap: 0.4rem;
+  cursor: pointer;
+  white-space: nowrap;
+  padding: 0;
+  margin: 0 0.75rem;
+  background: none;
+  border: none;
+  border-radius: 0;
+  line-height: 1;
+}
+
+.category-filter input[type="radio"] {
+  transform: scale(0.9); /* or 0.85 if you want it even smaller */
+}
+
+/* Styling for the title column toggle */
+td.title-toggle {
+  cursor: pointer;
+  color: #007bff;
+  text-decoration: underline;
+}
+td.title-toggle:hover {
+  color: #0056b3;
+}
+
+/* Styling for the expanded description row */
+.catalog-description {
+  padding: 1rem;
+  font-size: 0.95rem;
+  color: #444;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+}
+
+.erddap-select {
+  padding: 0.3rem;
+  font-size: 0.95rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.access-buttons {
+  text-align: center;
+}
+
+.access-dropdown {
+  width: 140px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #0271d2;
+  border: none;
+  appearance: none;
+  cursor: pointer;
+  text-align: center;
+
+  background-image: url("data:image/svg+xml,%3Csvg%20width%3D'12'%20height%3D'12'%20xmlns%3D'http%3A//www.w3.org/2000/svg'%3E%3Cpath%20d%3D'M2%204l4%204%204-4'%20stroke%3D'%23fff'%20fill%3D'none'%20stroke-width%3D'1.5'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 0.6rem;
+}
+
+.access-dropdown:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(2, 113, 210, 0.3);
+}
+
+.key-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.key-filters label {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.key-filters select {
+  margin-left: 0.5rem;
+  padding: 0.35rem 0.6rem;
+  font-size: 0.95rem;
+}
+
+.filter-panel select.form-select {
+  font-size: 1rem;
+  padding: 0.6rem;
+  border-radius: 0.5rem;
+}
+
+.filter-panel label {
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+  display: block;
+}
+
+.filter-panel hr {
+  border: none;
+  border-top: 2px solid #dee2e6;
+}
+.nav-tabs .nav-link.active {
+  background-color: #f8f9fa;
+  border-color: #dee2e6 #dee2e6 #fff;
+}
+
+.full-width-accordion .accordion {
+  width: 100%;
+}
+
+.full-width-accordion .accordion-item {
+  width: 100%;
+}
+
+.full-width-accordion .accordion-body {
+  max-width: 100%;
+}
+
+.full-width-accordion {
+  padding: 0;
+  margin: 0;
+}
+
+/* Style for <details> and <summary> blocks */
+details {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #dee2e6;
+  color: #212529;            /* Matches Lux theme text color */
+  font-size: 1.1rem;         /* Adjust as needed */
+}
+
+details summary {
+  color: #212529;            /* Matches Lux for headings */
+  font-weight: 600;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+details a {
+  color: #0d6efd;             /* Lux default link color */
+  text-decoration: underline; /* Optional, makes links obvious */
+}
+
+details a:hover {
+  color: #0a58ca;             /* Lux hover color */
+  text-decoration: none;
+}
+
+.erddap-dropdown {
+  background-color: #f5f5f5;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 0.75rem;
+  margin-bottom: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+/* Blue on hover */
+.erddap-dropdown:hover {
+  background-color: #e8f3ff;
+}
+
+.erddap-card h3 {
+  color: #003366;
+  font-weight: bold;
+}
+
+.right-dropdowns summary {
+  color: #003366;
+  font-weight: bold;
+}
+
+.dropdown-heading {
+  font-size: 1.25rem;
+  color: #003366;
+}
+
+/* Remove the icon from all callouts */
+.callout .callout-icon-container {
+  display: none;
+}
+
+/* Optional: remove space where icon used to be */
+.callout .callout-title-container {
+  padding-left: 0.5rem;
+}
+
+/* Increase callout title font size */
+.callout .callout-header {
+  font-size: 1.25rem !important;
+  font-weight: 600;
+}
+
+/* Increase callout body (description) font size */
+.callout .callout-body {
+  font-size: 1.1rem !important;
+  line-height: 1.6;
+}
+
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;    /* or space-between, space-around */
+  gap: 1.5rem;
+  max-width: 1000px;          /* controls 3-up fit */
+  margin: 0 auto;
+}
+
+.project-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: white;
+  transition: box-shadow 0.2s ease;
+  text-align: center;
+  width: 300px;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  object-position: center;
+  margin-top: -1.75rem;
+}
+
+.project-card h3 {
+  margin: 0.75rem 1rem 0.25rem;
+  font-size: 1.2rem;
+  margin-top: -1rem;
+}
+
+.project-card button {
+  margin: 0.5rem 1rem 1rem;
+  background: none;
+  border: none;
+  color: #0077b6;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 8rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  overflow-y: auto;         /* page scrolls when content is tall */
+  box-sizing: border-box;   /* keeps padding from overflowing */
+}
+
+.modal-content {
+  background-color: white;
+  margin: auto;
+  padding: 2rem;
+  padding-top: 0 !important;
+  border-radius: 0.5rem;
+  max-width: 900px;       /* wider modal */
+  width: 100%;
+  position: relative;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  overflow: visible;       /* no internal scrollbars */
+}
+
+.modal-content h2 {
+  margin-bottom: -2rem;
+}
+
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: #888;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.modal.show {
+  display: block;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.modal-section {
+  margin-bottom: 0.5rem;
+}
+
+.modal-section h4 {
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #003f5c;
+}
+
+/* Reduce paragraph spacing too */
+.modal-section p {
+  margin: 0;                  /* eliminate default p spacing */
+  line-height: 1.2;           /* slightly tighter line spacing */
+  font-size: 0.95rem;
+}
+
+.modal-columns {
+  display: grid;
+  grid-template-columns: 400px 400px; /* Two side-by-side columns */
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.modal-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-column h4 {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #003f5c;
+}
+
+.modal-column p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin-bottom: 0.5;
+}
+
+.modal-column .btn {
+  margin-top: auto;
+  align-self: flex-end;
+}
+
+.modal-top-image {
+  width: 400px;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 0.25rem;
+  padding-top: 1.5rem;
+}
+
+.tutorial-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  max-width: 1200;
+  margin: 0 auto;
+}
+
+.tutorial-card {
+  background: white;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 350px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.tutorial-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.tags {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #555;
+  background: #e0e7ff;
+  padding: 0.3rem 0.5rem;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.tutorial-card h3 {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  text-align: center;
+}
+
+.tutorial-card p {
+  font-size: 0.85rem;
+  color: #444;
+  margin: 0.25rem 0;
+}
+
+.stacked-info {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.info-block {
+  padding: 2rem 4vw; /* Add horizontal breathing room */
+  border-radius: 1rem;
+  box-shadow: none;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.info-blue {
+  background-color: #eaf4fb;
+}
+
+.info-gray {
+  background-color: #f3f3f3;
+}
+
+/* Make image slightly zoom on hover */
+.tutorial-card img {
+  cursor: zoom-in;
+  transition: transform 0.2s ease;
+}
+
+.tutorial-card img:hover {
+  transform: scale(1.02);
+}
+
+.about-card {
+  background: #eaf4fb;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 0 12px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* ——— Increase overall card text size ——— */
+.about-card {
+  font-size: 1rem;       /* ~18px; adjust up/down as needed */
+  line-height: 1.4;          /* improve readability */
+}
+
+/* ——— Make the card titles larger & darker ——— */
+.about-card h3 {
+  font-size: 1.25rem;         /* ~24px; feel free to tweak */
+  font-weight: 700;          /* bolden the title */
+  color: #1a1a1a;            /* a deep charcoal; darker than default */
+  margin-bottom: 0.5rem;     /* add some breathing room */
+}
+
+/* ——— Tweak paragraph spacing ——— */
+.about-card p {
+  margin-bottom: 1rem;       /* separate text from the button */
+  color: #333;               /* slightly lighter than the title */
+}
+
+
+.team-card {
+  background: #eaf4fb;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 0 12px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* ——— Increase overall card text size ——— */
+.team-card {
+  font-size: 1rem;       /* ~18px; adjust up/down as needed */
+  line-height: 1.4;          /* improve readability */
+}
+
+/* ——— Make the card titles larger & darker ——— */
+.team-card h3 {
+  font-size: 1.25rem;         /* ~24px; feel free to tweak */
+  font-weight: 700;          /* bolden the title */
+  color: #1a1a1a;            /* a deep charcoal; darker than default */
+  margin-bottom: 0.5rem;     /* add some breathing room */
+}
+
+/* ——— Tweak paragraph spacing ——— */
+.team-card p {
+  margin-bottom: 1rem;       /* separate text from the button */
+  color: #333;               /* slightly lighter than the title */
+}

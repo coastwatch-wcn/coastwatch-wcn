@@ -1,0 +1,1088 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Menlo-Bold;\f2\fnil\fcharset0 Menlo-Italic;
+}
+{\colortbl;\red255\green255\blue255;\red83\green104\blue112;\red252\green244\blue220;\red33\green118\blue199;
+\red165\green119\blue5;\red37\green146\blue134;\red129\green144\blue144;\red71\green91\blue98;\red115\green138\blue4;
+\red198\green28\blue111;}
+{\*\expandedcolortbl;;\cssrgb\c39608\c48235\c51373;\cssrgb\c99216\c96471\c89020;\cssrgb\c14902\c54510\c82353;
+\cssrgb\c70980\c53725\c0;\cssrgb\c16471\c63137\c59608;\cssrgb\c57647\c63137\c63137;\cssrgb\c34510\c43137\c45882;\cssrgb\c52157\c60000\c0;
+\cssrgb\c82745\c21176\c50980;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs24 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 ---\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf4 \cb3 \strokec4 anchor-sections\cf2 \strokec2 : \cf5 \strokec5 false\cf2 \cb1 \strokec2 \
+\cf4 \cb3 \strokec4 format\cf2 \strokec2 :\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3    \cf4 \strokec4 html\cf2 \strokec2 :\cb1 \
+\cb3      \cf4 \strokec4 toc\cf2 \strokec2 : \cf5 \strokec5 false\cf2 \cb1 \strokec2 \
+\pard\pardeftab720\partightenfactor0
+\cf4 \cb3 \strokec4 page-layout\cf2 \strokec2 : \cf6 \strokec6 full\cf2 \cb1 \strokec2 \
+\cf4 \cb3 \strokec4 resources\cf2 \strokec2 :\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3   - \cf6 \strokec6 datatables.min.js\cf2 \cb1 \strokec2 \
+\cb3   - \cf6 \strokec6 datatables.min.css\cf2 \cb1 \strokec2 \
+\cb3 ---\cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b \cf4 \cb3 \strokec4 # Data Catalog
+\f0\b0 \cf2 \cb1 \strokec2 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 The West Coast Node ERDDAP data server has over 1700 datasets. On this catalog page, we have listed the only datasets that are most often used by visitors to our website. To see a full listing of the available datasets, please click on "ERDDAP Server".\cb1 \
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f2\i \cf7 \cb3 \strokec7 <!-- Category filter buttons -->
+\f0\i0 \cf2 \cb1 \strokec2 \
+\pard\pardeftab720\partightenfactor0
+\cf7 \cb3 \strokec7 <\cf4 \strokec4 div\cf2 \strokec2  \cf7 \strokec7 id\cf2 \strokec2 =\cf6 \strokec6 "category-filter"\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "category-filter"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3   \cf7 \strokec7 <\cf4 \strokec4 label\cf7 \strokec7 ><\cf4 \strokec4 input\cf2 \strokec2  \cf7 \strokec7 type\cf2 \strokec2 =\cf6 \strokec6 "radio"\cf2 \strokec2  \cf7 \strokec7 name\cf2 \strokec2 =\cf6 \strokec6 "category"\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "All"\cf2 \strokec2  \cf7 \strokec7 checked>\cf2 \strokec2  All\cf7 \strokec7 </\cf4 \strokec4 label\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3   \cf7 \strokec7 <\cf4 \strokec4 label\cf7 \strokec7 ><\cf4 \strokec4 input\cf2 \strokec2  \cf7 \strokec7 type\cf2 \strokec2 =\cf6 \strokec6 "radio"\cf2 \strokec2  \cf7 \strokec7 name\cf2 \strokec2 =\cf6 \strokec6 "category"\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "SST"\cf7 \strokec7 >\cf2 \strokec2  SST\cf7 \strokec7 </\cf4 \strokec4 label\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3   \cf7 \strokec7 <\cf4 \strokec4 label\cf7 \strokec7 ><\cf4 \strokec4 input\cf2 \strokec2  \cf7 \strokec7 type\cf2 \strokec2 =\cf6 \strokec6 "radio"\cf2 \strokec2  \cf7 \strokec7 name\cf2 \strokec2 =\cf6 \strokec6 "category"\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "Ocean Color"\cf7 \strokec7 >\cf2 \strokec2  Ocean Color\cf7 \strokec7 </\cf4 \strokec4 label\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3   \cf7 \strokec7 <\cf4 \strokec4 label\cf7 \strokec7 ><\cf4 \strokec4 input\cf2 \strokec2  \cf7 \strokec7 type\cf2 \strokec2 =\cf6 \strokec6 "radio"\cf2 \strokec2  \cf7 \strokec7 name\cf2 \strokec2 =\cf6 \strokec6 "category"\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "Wind"\cf7 \strokec7 >\cf2 \strokec2  Wind\cf7 \strokec7 </\cf4 \strokec4 label\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3   \cf7 \strokec7 <\cf4 \strokec4 label\cf7 \strokec7 ><\cf4 \strokec4 input\cf2 \strokec2  \cf7 \strokec7 type\cf2 \strokec2 =\cf6 \strokec6 "radio"\cf2 \strokec2  \cf7 \strokec7 name\cf2 \strokec2 =\cf6 \strokec6 "category"\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "Salinity"\cf7 \strokec7 >\cf2 \strokec2  Salinity\cf7 \strokec7 </\cf4 \strokec4 label\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3   \cf7 \strokec7 <\cf4 \strokec4 label\cf7 \strokec7 ><\cf4 \strokec4 input\cf2 \strokec2  \cf7 \strokec7 type\cf2 \strokec2 =\cf6 \strokec6 "radio"\cf2 \strokec2  \cf7 \strokec7 name\cf2 \strokec2 =\cf6 \strokec6 "category"\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "Sea Level"\cf7 \strokec7 >\cf2 \strokec2  Sea Level\cf7 \strokec7 </\cf4 \strokec4 label\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3   \cf7 \strokec7 <\cf4 \strokec4 label\cf7 \strokec7 ><\cf4 \strokec4 input\cf2 \strokec2  \cf7 \strokec7 type\cf2 \strokec2 =\cf6 \strokec6 "radio"\cf2 \strokec2  \cf7 \strokec7 name\cf2 \strokec2 =\cf6 \strokec6 "category"\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "Geostrophic Currents"\cf7 \strokec7 >\cf2 \strokec2  Geostrophic Currents\cf7 \strokec7 </\cf4 \strokec4 label\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\pard\pardeftab720\partightenfactor0
+\cf7 \cb3 \strokec7 </\cf4 \strokec4 div\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f2\i \cf7 \cb3 \strokec7 <!-- Main data table -->
+\f0\i0 \cf2 \cb1 \strokec2 \
+\pard\pardeftab720\partightenfactor0
+\cf7 \cb3 \strokec7 <\cf4 \strokec4 table\cf2 \strokec2  \cf7 \strokec7 id\cf2 \strokec2 =\cf6 \strokec6 "catalog"\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "display"\cf2 \strokec2  \cf7 \strokec7 style\cf2 \strokec2 =\cf6 \strokec6 "width:100%"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3   \cf7 \strokec7 <\cf4 \strokec4 thead\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 <\cf4 \strokec4 tr\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 th\cf7 \strokec7 >\cf2 \strokec2 Category\cf7 \strokec7 </\cf4 \strokec4 th\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 th\cf7 \strokec7 >\cf2 \strokec2 Title\cf7 \strokec7 </\cf4 \strokec4 th\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 th\cf7 \strokec7 >\cf2 \strokec2 Dates\cf7 \strokec7 </\cf4 \strokec4 th\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 th\cf7 \strokec7 >\cf2 \strokec2 Resolution\cf7 \strokec7 </\cf4 \strokec4 th\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 th\cf7 \strokec7 >\cf2 \strokec2 Area\cf7 \strokec7 </\cf4 \strokec4 th\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 th\cf7 \strokec7 >\cf2 \strokec2 Composite\cf7 \strokec7 </\cf4 \strokec4 th\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 th\cf7 \strokec7 >\cf2 \strokec2 Access\cf7 \strokec7 </\cf4 \strokec4 th\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 </\cf4 \strokec4 tr\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3   \cf7 \strokec7 </\cf4 \strokec4 thead\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3   \cf7 \strokec7 <\cf4 \strokec4 tbody\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 <\cf4 \strokec4 tr\cf2 \strokec2  \cf7 \strokec7 data-description\cf2 \strokec2 =\cf6 \strokec6 "These VIIRS SST data are produced using the NOAA Advanced Clear-Sky Processor for Ocean (ACSPO) SST system from the afternoon NPP and N20 satellites."\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 SST\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "title-toggle"\cf7 \strokec7 >\cf2 \strokec2 VIIRS SNPP SST 0.04\'b0/4km Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 2020\'96present\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 4 km\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Daily\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-buttons"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 <\cf4 \strokec4 select\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-dropdown"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 ""\cf7 \strokec7 >\cf2 \strokec2 ERDDAP\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdMH1sstd1day_R2022NRTMasked.graph"\cf7 \strokec7 >\cf2 \strokec2 Daily\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 </\cf4 \strokec4 select\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 </\cf4 \strokec4 tr\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 <\cf4 \strokec4 tr\cf2 \strokec2  \cf7 \strokec7 data-description\cf2 \strokec2 =\cf6 \strokec6 "This is the near real-time version of Sea Surface Temperature (SST), from Moderate Resolution Imaging Spectroradiometer (MODIS) on Aqua, Level-3 Standard Mapped Image (SMI), from NASA GSFC OBPG, R2022.0."\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 SST\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "title-toggle"\cf7 \strokec7 >\cf2 \strokec2 MODIS Aqua SST NRT 0.04\'b0/4km Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 2019\'96present\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 4 km\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Daily\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-buttons"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 <\cf4 \strokec4 select\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-dropdown"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 ""\cf7 \strokec7 >\cf2 \strokec2 ERDDAP\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/nesdisVHNsstDaily.graph"\cf7 \strokec7 >\cf2 \strokec2 Daily\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 </\cf4 \strokec4 select\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 </\cf4 \strokec4 tr\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 <\cf4 \strokec4 tr\cf2 \strokec2  \cf7 \strokec7 data-description\cf2 \strokec2 =\cf6 \strokec6 "This is the delayed, science-quality version of Sea Surface Temperature (SST), masked, from Moderate Resolution Imaging Spectroradiometer (MODIS) on Aqua, Level-3 Standard Mapped Image (SMI), from NASA GSFC OBPG, R2022.0."\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 SST\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "title-toggle"\cf7 \strokec7 >\cf2 \strokec2 MODIS Aqua SST Science Quality 0.04\'b0/4km Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 2003\'96present\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 4 km\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         Daily\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         8-Day\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         Monthly\cb1 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-buttons"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 <\cf4 \strokec4 select\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-dropdown"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 ""\cf7 \strokec7 >\cf2 \strokec2 ERDDAP\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdMH1sstd1day_R2022SQMasked.graph"\cf7 \strokec7 >\cf2 \strokec2 Daily\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdMH1sstd8day_R2022SQMasked.graph"\cf7 \strokec7 >\cf2 \strokec2 Monthly\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdMH1sstdmday_R2022SQMasked.graph"\cf7 \strokec7 >\cf2 \strokec2 8-day\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 </\cf4 \strokec4 select\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 </\cf4 \strokec4 tr\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 <\cf4 \strokec4 tr\cf2 \strokec2  \cf7 \strokec7 data-description\cf2 \strokec2 =\cf6 \strokec6 "NOAA Advanced Clear-Sky Processor for Ocean L3S-LEO SST is a family of multisensor, 0.02\'ba resolution super-collated dataset."\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 SST\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "title-toggle"\cf7 \strokec7 >\cf2 \strokec2 NOAA Gridded Super-collated (LEO) SST Thermal Fronts 0.02\'b0/2km Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 2012\'96present\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 2 km\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2  Daily\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-buttons"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 <\cf4 \strokec4 select\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-dropdown"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 ""\cf7 \strokec7 >\cf2 \strokec2 ERDDAP\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/noaacwLEOACSPOSSTL3SCDaily.graph"\cf7 \strokec7 >\cf2 \strokec2 Daily\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 </\cf4 \strokec4 select\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 </\cf4 \strokec4 tr\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 <\cf4 \strokec4 tr\cf2 \strokec2  \cf7 \strokec7 data-description\cf2 \strokec2 =\cf6 \strokec6 "A Sea Surface Temperature (SST) Anomaly product created by ERD based on JPL MUR's climatology (2003-2014) of the Jet Propulsion Laboratory's (JPL) Multi-scale Ultra-high Resolution (MUR), merged, multi-sensor L4 v4.1 Foundation SST analysis product (part of the Group for High-Resolution Sea Surface Temperature (GHRSST) project)."\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 SST\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "title-toggle"\cf7 \strokec7 >\cf2 \strokec2 MUR SST SST Anomaly Gap-Filled 0.01\'b0/1km Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 2002\'96present\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 1 km\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2  \cb1 \
+\cb3         SST Daily\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         SST Monthly\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         Anomaly Daily\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         Anomaly Monthly\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-buttons"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 <\cf4 \strokec4 select\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-dropdown"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 ""\cf7 \strokec7 >\cf2 \strokec2 ERDDAP\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/jplMURSST41.graph"\cf7 \strokec7 >\cf2 \strokec2 SST Daily\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/jplMURSST41mday.graph"\cf7 \strokec7 >\cf2 \strokec2 SST Monthly\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/jplMURSST41anom1day.graph"\cf7 \strokec7 >\cf2 \strokec2 Anomaly Daily\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/jplMURSST41anommday.graph"\cf7 \strokec7 >\cf2 \strokec2 Anomaly Monthly\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 </\cf4 \strokec4 select\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 </\cf4 \strokec4 tr\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 <\cf4 \strokec4 tr\cf2 \strokec2  \cf7 \strokec7 data-description\cf2 \strokec2 =\cf6 \strokec6 "CoralTemp 5km gap-free analysed blended sea surface temperature over the global ocean. CoralTemp is derived from three different but related 5km daily gap-free SST data sets and provides an internally consistent SST product that stretches from 1985 to present: Operational Sea Surface Temperature and Sea Ice Analysis (OSTIA) Sea Surface Temperature Reanalysis (1985-2002), Geo-Polar Blended Night-only Sea Surface Temperature Reanalysis (2002-2016), Geo-Polar Blended Night-only Sea Surface Temperature Near Real-Time (2017 to present)."\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 SST\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "title-toggle"\cf7 \strokec7 >\cf2 \strokec2 NOAA Coral Reef Watch SST SST Anomaly Gap Filled Long Time Series 0.05\'b0/5km Global \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 1985\'96present\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 5 km\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2  \cb1 \
+\cb3         SST Daily\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         SST Monthly\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         Anomaly Daily\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         Anomaly Monthly\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-buttons"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 <\cf4 \strokec4 select\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-dropdown"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 ""\cf7 \strokec7 >\cf2 \strokec2 ERDDAP\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/NOAA_DHW.graph?CRW_SST"\cf7 \strokec7 >\cf2 \strokec2 SST Daily\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/NOAA_DHW_monthly.graph"\cf7 \strokec7 >\cf2 \strokec2 SST Monthly\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/NOAA_DHW.graph?CRW_SSTANOMALY"\cf7 \strokec7 >\cf2 \strokec2 Anomaly Daily\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/NOAA_DHW_monthly.graph?sea_surface_temperature_anomaly"\cf7 \strokec7 >\cf2 \strokec2 Anomaly Monthly\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 </\cf4 \strokec4 select\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 </\cf4 \strokec4 tr\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 <\cf4 \strokec4 tr\cf2 \strokec2  \cf7 \strokec7 data-description\cf2 \strokec2 =\cf6 \strokec6 "Advanced Very High Resolution Radiometer (AVHRR) Pathfinder Version 5.3 L3-Collated (L3C) sea surface temperature. This netCDF-4 file contains sea surface temperature (SST) data produced as part of the AVHRR Pathfinder SST Project. These data were created using Version 5.3 of the Pathfinder algorithm."\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 SST\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "title-toggle"\cf7 \strokec7 >\cf2 \strokec2 NOAA Pathfinder v5.3 Night SST Long Time Series 0.05\'b0/5km Global \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 1981-2023\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 5 km\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2  \cb1 \
+\cb3         Daily-night\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         8-Day-night\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         Monthly-night\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         Daily-day\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         8-Day-day\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         Monthly-day\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-buttons"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 <\cf4 \strokec4 select\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-dropdown"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 ""\cf7 \strokec7 >\cf2 \strokec2 ERDDAP\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/nceiPH53sstn1day.graph"\cf7 \strokec7 >\cf2 \strokec2 Daily-night\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdPH53sstn8day.graph"\cf7 \strokec7 >\cf2 \strokec2 8-Day-night\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdPH53sstnmday.graph"\cf7 \strokec7 >\cf2 \strokec2 Monthly-night\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/nceiPH53sstd1day.graph"\cf7 \strokec7 >\cf2 \strokec2 Daily-day\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdPH53sstd8day.graph"\cf7 \strokec7 >\cf2 \strokec2 8-Day-day\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdPH53sstdmday.graph"\cf7 \strokec7 >\cf2 \strokec2 Monthly-day\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 </\cf4 \strokec4 select\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 </\cf4 \strokec4 tr\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 <\cf4 \strokec4 tr\cf2 \strokec2  \cf7 \strokec7 data-description\cf2 \strokec2 =\cf6 \strokec6 "NOAA/National Centers for Environmental Information (NCEI) 1/4 Degree Daily Optimum Interpolation Sea Surface Temperature (OISST) Analysis, Version 2.1 - Inter. NOAAs 1/4-degree Daily Optimum Interpolation Sea Surface Temperature (OISST) (sometimes referred to as Reynolds SST, which however also refers to earlier products at different resolution), currently available as version v02r01, is created by interpolating and extrapolating SST observations from different sources, resulting in a smoothed complete field."\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 SST\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "title-toggle"\cf7 \strokec7 >\cf2 \strokec2 NOAA AVHRR Optimum Interpolation v2.1 SST SST Anomaly Gap-Filled Long Time Series 0.05\'b0/5km Global   \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 1981-present\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 5 km\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2  \cb1 \
+\cb3         SST Science Quality\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         SST NRT\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         Anomaly Science Quality\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         Anomaly NRT\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-buttons"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 <\cf4 \strokec4 select\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-dropdown"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 ""\cf7 \strokec7 >\cf2 \strokec2 ERDDAP\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/ncdcOisst21Agg.graph"\cf7 \strokec7 >\cf2 \strokec2 SST Science Quality\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/ncdcOisst21Agg.graph?anom"\cf7 \strokec7 >\cf2 \strokec2 SST NRT\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/ncdcOisst21NrtAgg.graph"\cf7 \strokec7 >\cf2 \strokec2 Anomaly Science Quality\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/ncdcOisst21NrtAgg.graph?anom"\cf7 \strokec7 >\cf2 \strokec2 Anomaly NRT\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 </\cf4 \strokec4 select\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 </\cf4 \strokec4 tr\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 <\cf4 \strokec4 tr\cf2 \strokec2  \cf7 \strokec7 data-description\cf2 \strokec2 =\cf6 \strokec6 "These high-resolution SST data are produced using the NOAA Advanced Clear-Sky Processor for Ocean (ACSPO) SST system NPP VIIRS is a multi-disciplinary instrument that flies on the Suomi-NPP (National Polar-orbiting Partnership) satellite."\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 SST\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "title-toggle"\cf7 \strokec7 >\cf2 \strokec2 NOAA VIIRS California SST High-Resolution 750m California Coast \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 2014-present\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 750 m\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 California Coast\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 3-Day\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-buttons"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 <\cf4 \strokec4 select\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-dropdown"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 ""\cf7 \strokec7 >\cf2 \strokec2 ERDDAP\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdVHsstaWS3day.graph"\cf7 \strokec7 >\cf2 \strokec2 3-Day\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 </\cf4 \strokec4 select\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 </\cf4 \strokec4 tr\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 <\cf4 \strokec4 tr\cf2 \strokec2  \cf7 \strokec7 data-description\cf2 \strokec2 =\cf6 \strokec6 "NOAA CoastWatch provides SST data from NASA's Aqua Spacecraft. Measurements are gathered by the Moderate Resolution Imaging Spectroradiometer (MODIS) carried aboard the spacecraft."\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 SST\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "title-toggle"\cf7 \strokec7 >\cf2 \strokec2 MODIS Aqua West Coast SST High-Resolution 0.0125\'b0/1.25km West Coast \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 2002-present\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 1.25 km\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 West Coast\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         Daily\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         3-Day\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         8-Day\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         14-Day\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         Monthly\cb1 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-buttons"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 <\cf4 \strokec4 select\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-dropdown"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 ""\cf7 \strokec7 >\cf2 \strokec2 ERDDAP\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdMWsstd1day.graph"\cf7 \strokec7 >\cf2 \strokec2 Daily\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdMWsstd3day.graph"\cf7 \strokec7 >\cf2 \strokec2 3-Day\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdMWsstd8day.graph"\cf7 \strokec7 >\cf2 \strokec2 8-Day\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdMWsstd14day.graph"\cf7 \strokec7 >\cf2 \strokec2 14-Day\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdMWsstdmday.graph"\cf7 \strokec7 >\cf2 \strokec2 Monthly\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 </\cf4 \strokec4 select\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 </\cf4 \strokec4 tr\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 <\cf4 \strokec4 tr\cf2 \strokec2  \cf7 \strokec7 data-description\cf2 \strokec2 =\cf6 \strokec6 "Sea surface temperature retrievals produced by NOAA/NESDIS/STAR from the ABI sensor on the GOES-16 satellite covering the US West Coast and more. L2P algorithm V2.70; L3U algorithm V4.1.5. SSTs are a weighted average of the SSTs of contributing pixels."\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 SST\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "title-toggle"\cf7 \strokec7 >\cf2 \strokec2 GOES-18 West SST Geostationary 0.02\'b0/2km Western Hemisphere 0.25\'b0 \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 2022-present\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 2 km\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Western Hemisphere\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Hourly\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-buttons"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 <\cf4 \strokec4 select\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-dropdown"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 ""\cf7 \strokec7 >\cf2 \strokec2 ERDDAP\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/goes_west.graph"\cf7 \strokec7 >\cf2 \strokec2 Hourly\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 </\cf4 \strokec4 select\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 </\cf4 \strokec4 tr\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 </\cf4 \strokec4 tr\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 <\cf4 \strokec4 tr\cf2 \strokec2  \cf7 \strokec7 data-description\cf2 \strokec2 =\cf6 \strokec6 "Visible and Infrared Imager/Radiometer Suite/Suomi-NPP (VIIRSN) produced by NOAA/STAR Ocean Color Team through NOAA Multi-Sensor Level 1 to Level 2 processing system (MSL12) using the Ocean Color improved satellite data record. This is Science Quality data, reprocessed in 2017."\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Ocean Color\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "title-toggle"\cf7 \strokec7 >\cf2 \strokec2 NOAA VIIRS SNPP Chlorophyll Science Quality NRT 0.04\'b0/4km Global \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         2012-present\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         2017-present\cb1 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 4 km\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         SQ Daily\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         SQ Weekly\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         SQ Monthly\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         NRT Daily\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         NRT Weekly  \cb1 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-buttons"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 <\cf4 \strokec4 select\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-dropdown"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 ""\cf7 \strokec7 >\cf2 \strokec2 ERDDAP\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/nesdisVHNSQchlaDaily.graph"\cf7 \strokec7 >\cf2 \strokec2 SQ Daily\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/nesdisVHNSQchlaWeekly.graph"\cf7 \strokec7 >\cf2 \strokec2 SQ Weekly\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/nesdisVHNSQchlaMonthly.graph"\cf7 \strokec7 >\cf2 \strokec2 SQ Monthly\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/nesdisVHNchlaDaily.graph"\cf7 \strokec7 >\cf2 \strokec2 NRT Daily\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/nesdisVHNchlaWeekly.graph"\cf7 \strokec7 >\cf2 \strokec2 NRT Weekly\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 </\cf4 \strokec4 select\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 </\cf4 \strokec4 tr\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 <\cf4 \strokec4 tr\cf2 \strokec2  \cf7 \strokec7 data-description\cf2 \strokec2 =\cf6 \strokec6 "Visible and Infrared Imager/Radiometer Suite/Suomi-NPP (VIIRSN) produced by NOAA/STAR Ocean Color Team through NOAA Multi-Sensor Level 1 to Level 2 processing system (MSL12) using the Ocean Color improved satellite data record. This is Science Quality data, reprocessed in 2017."\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Ocean Color\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "title-toggle"\cf7 \strokec7 >\cf2 \strokec2 NOAA VIIRS NOAA-20 Chlorophyll Science Quality 0.04\'b0/4km Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 2017-present\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 4 km\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         Daily\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         Weekly\cb1 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-buttons"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 <\cf4 \strokec4 select\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-dropdown"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 ""\cf7 \strokec7 >\cf2 \strokec2 ERDDAP\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/search/index.html?page=1&itemsPerPage=1000&searchFor=nesdisVHNnoaa20chlaDaily"\cf7 \strokec7 >\cf2 \strokec2 Daily\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/search/index.html?page=1&itemsPerPage=1000&searchFor=nesdisVHNnoaa20chlaWeekly"\cf7 \strokec7 >\cf2 \strokec2 Weekly\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 </\cf4 \strokec4 select\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 </\cf4 \strokec4 tr\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 <\cf4 \strokec4 tr\cf2 \strokec2  \cf7 \strokec7 data-description\cf2 \strokec2 =\cf6 \strokec6 "Visible and Infrared Imager/Radiometer Suite/Suomi-NPP (VIIRSN) produced by NOAA/STAR Ocean Color Team through NOAA Multi-Sensor Level 1 to Level 2 processing system (MSL12) using the Ocean Color improved satellite data record. This is Science Quality data, reprocessed in 2017."\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Ocean Color\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "title-toggle"\cf7 \strokec7 >\cf2 \strokec2 NOAA VIIRS NOAA-20 Chlorophyll Science Quality 0.04\'b0/4km Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 2017-present\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 4 km\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         Daily\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         Weekly\cb1 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-buttons"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 <\cf4 \strokec4 select\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-dropdown"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 ""\cf7 \strokec7 >\cf2 \strokec2 ERDDAP\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/search/index.html?page=1&itemsPerPage=1000&searchFor=nesdisVHNnoaa20chlaDaily"\cf7 \strokec7 >\cf2 \strokec2 Daily\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/search/index.html?page=1&itemsPerPage=1000&searchFor=nesdisVHNnoaa20chlaWeekly"\cf7 \strokec7 >\cf2 \strokec2 Weekly\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 </\cf4 \strokec4 select\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 </\cf4 \strokec4 tr\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 <\cf4 \strokec4 tr\cf2 \strokec2  \cf7 \strokec7 data-description\cf2 \strokec2 =\cf6 \strokec6 "The MODIS (Moderate Resolution Imaging Spectro-radiometer) sensor was deployed onboard the NASA Aqua satellite. It is a multi-disciplinary sensor providing data for the ocean, land, aerosol, and cloud research and is used for detecting chlorophyll-a concentrations in the world's oceans, among other applications. Aqua MODIS views the entire Earth's surface every 2 days, acquiring data in 36 spectral bands. This dataset was reprocessed by NASA in 2018."\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Ocean Color\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "title-toggle"\cf7 \strokec7 >\cf2 \strokec2 MODIS Aqua Chlorophyll Science Quality 0.04\'b0/4km Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 2003-present\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 4 km\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         Daily\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         Weekly\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         Monthly\cb1 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-buttons"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 <\cf4 \strokec4 select\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-dropdown"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 ""\cf7 \strokec7 >\cf2 \strokec2 ERDDAP\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdMH1chla1day.graph"\cf7 \strokec7 >\cf2 \strokec2 Daily\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdMH1chla8day.graph"\cf7 \strokec7 >\cf2 \strokec2 Weekly\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdMH1chlamday.graph"\cf7 \strokec7 >\cf2 \strokec2 Monthly\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 </\cf4 \strokec4 select\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 </\cf4 \strokec4 tr\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 <\cf4 \strokec4 tr\cf2 \strokec2  \cf7 \strokec7 data-description\cf2 \strokec2 =\cf6 \strokec6 "The NASA SeaWiFS (Sea-viewing Wide Field-of-view Sensor) sensor onboard the SeaStart spacecraft was used for detecting and measuring global sea-surface chlorophyll-a concentrations throughout the world's oceans from 1997 through 2010. During that time, the satellite was able to establish an unprecedented time series of global chlorophyll-a concentrations. The sensor started experiencing issues around 2008 leading to significant missing data in 2008-2010, so it is recommended to be cautious with data post 2007. This dataset was reprocessed by NASA in 2018."\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Ocean Color\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "title-toggle"\cf7 \strokec7 >\cf2 \strokec2 SeaWiFS Chlorophyll Science Quality 0.1\'b0/9km Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 1997-2010\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 9 km\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         Daily\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         Weekly\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         Monthly\cb1 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-buttons"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 <\cf4 \strokec4 select\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-dropdown"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 ""\cf7 \strokec7 >\cf2 \strokec2 ERDDAP\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdSW2018chla1day.graph"\cf7 \strokec7 >\cf2 \strokec2 Daily\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdSW2018chla8day.graph"\cf7 \strokec7 >\cf2 \strokec2 Weekly\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdSW2018chlamday.graph"\cf7 \strokec7 >\cf2 \strokec2 Monthly\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 </\cf4 \strokec4 select\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 </\cf4 \strokec4 tr\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 <\cf4 \strokec4 tr\cf2 \strokec2  \cf7 \strokec7 data-description\cf2 \strokec2 =\cf6 \strokec6 "R2018 version of Level-3 Standard Mapped Image (SMI), Global, 4km, Chlorophyll a, OCI Algorithm, 8-Day composite data from the Visible and Infrared Imager/Radiometer Suite (VIIRS), as processed by NASA GSFC Ocean Biology Processing Group (OBPG). VIIRS is a multi-disciplinary instrument that flies on the Suomi-NPP (National Polar-orbiting Partnership) satellite. Suomi-NPP is the initial spacecraft in the JPSS (Joint Polar Satellite Systems) series of spacecraft. JPSS is our Nation's next generation polar-orbiting operational environmental satellite system. JPSS is a collaborative program between NOAA and its acquisition agent NASA. VIIRS is the successor to MODIS for Earth science data product generation."\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Ocean Color\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "title-toggle"\cf7 \strokec7 >\cf2 \strokec2 NASA VIIRS SNPP Chlorophyll Science Quality NRT 0.04\'b0/4km Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 2012-present\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 4 km\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         Daily\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         Weekly\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         Monthly\cb1 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-buttons"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 <\cf4 \strokec4 select\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-dropdown"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 ""\cf7 \strokec7 >\cf2 \strokec2 ERDDAP\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdVH2018chla1day.graph"\cf7 \strokec7 >\cf2 \strokec2 Daily\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdVH2018chla8day.graph"\cf7 \strokec7 >\cf2 \strokec2 Weekly\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdVH2018chlamday.graph"\cf7 \strokec7 >\cf2 \strokec2 Monthly\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 </\cf4 \strokec4 select\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 </\cf4 \strokec4 tr\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 <\cf4 \strokec4 tr\cf2 \strokec2  \cf7 \strokec7 data-description\cf2 \strokec2 =\cf6 \strokec6 "R2018 version of Level-3 Standard Mapped Image (SMI), Global, 4km, Chlorophyll a, OCI Algorithm, 8-Day composite data from the Visible and Infrared Imager/Radiometer Suite (VIIRS), as processed by NASA GSFC Ocean Biology Processing Group (OBPG). VIIRS is a multi-disciplinary instrument that flies on the Suomi-NPP (National Polar-orbiting Partnership) satellite. Suomi-NPP is the initial spacecraft in the JPSS (Joint Polar Satellite Systems) series of spacecraft. JPSS is our Nation's next generation polar-orbiting operational environmental satellite system. JPSS is a collaborative program between NOAA and its acquisition agent NASA. VIIRS is the successor to MODIS for Earth science data product generation."\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Ocean Color\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "title-toggle"\cf7 \strokec7 >\cf2 \strokec2 NASA VIIRS NOAA-20 Chlorophyll Science Quality 0.04\'b0/4km Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 2021-present\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 4 km\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         Daily\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         Weekly\cb1 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-buttons"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 <\cf4 \strokec4 select\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-dropdown"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 ""\cf7 \strokec7 >\cf2 \strokec2 ERDDAP\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/search/index.html?page=1&itemsPerPage=1000&searchFor=nesdisVHNnoaa20chlaDaily"\cf7 \strokec7 >\cf2 \strokec2 Daily\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/search/index.html?page=1&itemsPerPage=1000&searchFor=nesdisVHNnoaa20chlaWeekly"\cf7 \strokec7 >\cf2 \strokec2 Weekly\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 </\cf4 \strokec4 select\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 </\cf4 \strokec4 tr\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 <\cf4 \strokec4 tr\cf2 \strokec2  \cf7 \strokec7 data-description\cf2 \strokec2 =\cf6 \strokec6 "This datasets blends chlorophyll data from the NOAA-SNPP and NOAA-20 VIIRS ocean color sensors. A gap-filling application was employed to fill in data gaps that uses a mathematical technique based on the data interpolating empirical orthogonal function (DINEOF). This technique exploits the coherency over location and time of the data from the two satellites to infer a value at the missing location. CoastWatch serves this daily global gap-filled product at ~9 km spatial resolution in a NetCDF file format."\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Ocean Color\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "title-toggle"\cf7 \strokec7 >\cf2 \strokec2 NOAA Gap Filled VIIRS SNPP & NOAA-20 Chlorophyll Science Quality 0.1\'b0/9km Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 2018-present\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 9 km\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         Daily NRT\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         Science Quality\cb1 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-buttons"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 <\cf4 \strokec4 select\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-dropdown"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 ""\cf7 \strokec7 >\cf2 \strokec2 ERDDAP\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/nesdisVHNnoaaSNPPnoaa20NRTchlaGapfilledDaily.graph"\cf7 \strokec7 >\cf2 \strokec2 Daily NRT\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/nesdisVHNnoaaSNPPnoaa20chlaGapfilledDaily.graph"\cf7 \strokec7 >\cf2 \strokec2 Science Quality\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 </\cf4 \strokec4 select\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 </\cf4 \strokec4 tr\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 <\cf4 \strokec4 tr\cf2 \strokec2  \cf7 \strokec7 data-description\cf2 \strokec2 =\cf6 \strokec6 "The European Space Agency (ESA) started the Climate Change Initiative (CCI) to generate satellite-based Essential Climate Variables to allow assessing long-term trends from satellite products. The dataset is created by band-shifting and bias-correcting MERIS, MODIS and VIIRS data to match SeaWiFS data, merging the datasets and computing per-pixel uncertainty estimates. Parameters include chlorophyll a, remote sensing reflectance, diffuse attenuation coefficients, absorption coefficients, backscatter coefficients, and water classification."\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Ocean Color\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "title-toggle"\cf7 \strokec7 >\cf2 \strokec2 ESA OC-CCI v6.0 Chlorophyll Long Time Series Science Quality 0.04\'b0/4km Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 1997-present\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 4 km\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         Daily\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         5-Day\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         8-Day\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         Monthly\cb1 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-buttons"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 <\cf4 \strokec4 select\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-dropdown"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 ""\cf7 \strokec7 >\cf2 \strokec2 ERDDAP\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/pmlEsaCCI60OceanColorDaily.graph"\cf7 \strokec7 >\cf2 \strokec2 Daily\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/pmlEsaCCI60OceanColor5Day.graph"\cf7 \strokec7 >\cf2 \strokec2 5-Day\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/pmlEsaCCI60OceanColor8Day.graph"\cf7 \strokec7 >\cf2 \strokec2 8-Day\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/pmlEsaCCI60OceanColorMonthly.graph"\cf7 \strokec7 >\cf2 \strokec2 Monthly\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 </\cf4 \strokec4 select\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 </\cf4 \strokec4 tr\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 <\cf4 \strokec4 tr\cf2 \strokec2  \cf7 \strokec7 data-description\cf2 \strokec2 =\cf6 \strokec6 "NOAA CoastWatch distributes L3 level chlorophyll a concentration data derived from measurements take by the VIIRS sensor (Visible Infrared Imaging Radiometer Suite) aboard the Suomi-NPP satellite. Chlorophyll values were calculated using NOAA-MSL12 NRT processing with LAND+CLDICE+HIGLINT+HISATZEN+HISOLZEN masking."\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Ocean Color\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "title-toggle"\cf7 \strokec7 >\cf2 \strokec2 NOAA VIIRS SNPP Chlorophy NRT High-Resolution 750m North Pacific\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 2015-present\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 750 m\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 North Pacific\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         Daily\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         3-Day\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         8-Day\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         Monthly\cb1 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-buttons"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 <\cf4 \strokec4 select\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-dropdown"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 ""\cf7 \strokec7 >\cf2 \strokec2 ERDDAP\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdVHNchla1day.graph"\cf7 \strokec7 >\cf2 \strokec2 Daily\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdVHNchla3day.graph"\cf7 \strokec7 >\cf2 \strokec2 3-Day\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdVHNchla8day.graph"\cf7 \strokec7 >\cf2 \strokec2 8-Day\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdVHNchlamday.graph"\cf7 \strokec7 >\cf2 \strokec2 Monthly\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 </\cf4 \strokec4 select\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 </\cf4 \strokec4 tr\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 <\cf4 \strokec4 tr\cf2 \strokec2  \cf7 \strokec7 data-description\cf2 \strokec2 =\cf6 \strokec6 "The MODIS (Moderate Resolution Imaging Spectro-radiometer) sensor was deployed onboard the NASA Aqua satellite. It is a multi-disciplinary sensor providing data for the ocean, land, aerosol, and cloud research and is used for detecting chlorophyll-a concentrations in the world's oceans, among other applications. Aqua MODIS views the entire Earth's surface every 2 days, acquiring data in 36 spectral bands."\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Ocean Color\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "title-toggle"\cf7 \strokec7 >\cf2 \strokec2 MODIS Aqua Chlorophyll Science Quality 0.0125\'b0/1.25km US West Coast\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 2002-present\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 1.25 km\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 West Coast\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         Daily\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         3-Day\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         8-Day\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         14-day\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         Monthly\cb1 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-buttons"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 <\cf4 \strokec4 select\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-dropdown"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 ""\cf7 \strokec7 >\cf2 \strokec2 ERDDAP\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdMWchla1day.graph"\cf7 \strokec7 >\cf2 \strokec2 Daily\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdMWchla3day.graph"\cf7 \strokec7 >\cf2 \strokec2 3-Day\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdMWchla8day.graph"\cf7 \strokec7 >\cf2 \strokec2 8-Day\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdMWchla14day.graph"\cf7 \strokec7 >\cf2 \strokec2 14-Day\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdMWchlamday.graph"\cf7 \strokec7 >\cf2 \strokec2 Monthly\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 </\cf4 \strokec4 select\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 </\cf4 \strokec4 tr\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 <\cf4 \strokec4 tr\cf2 \strokec2  \cf7 \strokec7 data-description\cf2 \strokec2 =\cf6 \strokec6 "The MODIS (Moderate Resolution Imaging Spectro-radiometer) sensor was deployed onboard the NASA Aqua satellite. It is a multi-disciplinary sensor providing data for the ocean, land, aerosol, and cloud research and is used for detecting chlorophyll-a concentrations in the world's oceans, among other applications. Aqua MODIS views the entire Earth's surface every 2 days, acquiring data in 36 spectral bands."\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Ocean Color\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "title-toggle"\cf7 \strokec7 >\cf2 \strokec2 MODIS Aqua Chlorophyll Science Quality 0.025\'b0/2.5km Pacific Ocean\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 2006-present\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 2.5 km\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Pacific Ocean\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         Daily\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         3-Day\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         8-Day\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         14-day\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         Monthly\cb1 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-buttons"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 <\cf4 \strokec4 select\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-dropdown"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 ""\cf7 \strokec7 >\cf2 \strokec2 ERDDAP\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdMBchla1day.graph"\cf7 \strokec7 >\cf2 \strokec2 Daily\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdMBchla3day.graph"\cf7 \strokec7 >\cf2 \strokec2 3-Day\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdMBchla8day.graph"\cf7 \strokec7 >\cf2 \strokec2 8-Day\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdMBchla14day.graph"\cf7 \strokec7 >\cf2 \strokec2 14-Day\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdMBchlamday.graph"\cf7 \strokec7 >\cf2 \strokec2 Monthly\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 </\cf4 \strokec4 select\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 </\cf4 \strokec4 tr\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 <\cf4 \strokec4 tr\cf2 \strokec2  \cf7 \strokec7 data-description\cf2 \strokec2 =\cf6 \strokec6 "Diffuse attenuation coefficient for 490 nm wavelength (Kd490). Daily composite data from the Visible and Infrared Imager/Radiometer Suite (VIIRS). The science quality data have a 15-day latency. The data, processed by the NOAA/STAR Ocean Color Team, are produced from MSL12 v1.2 using OC-SDR v04."\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Ocean Color\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "title-toggle"\cf7 \strokec7 >\cf2 \strokec2 NOAA VIIRS SNPP Kd490 Science Quality NRT 0.04\'b0/4km Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 2012-present\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 4 km\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         Kd490 SQ Daily\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         Kd490 SQ Weekly\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         Kd490 SQ Monthly\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         Kd490 NRT Daily\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         Kd490 NRT Weekly\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         Kd490 NRT Monthly\cb1 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-buttons"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 <\cf4 \strokec4 select\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-dropdown"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 ""\cf7 \strokec7 >\cf2 \strokec2 ERDDAP\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/nesdisVHNSQkd490Daily.graph"\cf7 \strokec7 >\cf2 \strokec2 Kd490 SQ Daily\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/nesdisVHNSQkd490Weekly.graph"\cf7 \strokec7 >\cf2 \strokec2 Kd490 SQ Weekly\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/nesdisVHNSQkd490Monthly.graph"\cf7 \strokec7 >\cf2 \strokec2 Kd490 SQ Monthly\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdVH2018k4901day.graph"\cf7 \strokec7 >\cf2 \strokec2 Kd490 NRT Daily\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdVH2018k4908day.graph"\cf7 \strokec7 >\cf2 \strokec2 Kd490 NRT Weekly\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdVH2018k490mday.graph"\cf7 \strokec7 >\cf2 \strokec2 Kd490 NRT Monthly\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 </\cf4 \strokec4 select\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 </\cf4 \strokec4 tr\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 <\cf4 \strokec4 tr\cf2 \strokec2  \cf7 \strokec7 data-description\cf2 \strokec2 =\cf6 \strokec6 "Diffuse attenuation coefficient for photosynthetically available radiation (KdPAR). Daily composite data from the Visible and Infrared Imager/Radiometer Suite (VIIRS). The science quality data have a 15-day latency. The data, processed by the NOAA/STAR Ocean Color Team, are produced from MSL12 v1.2 using OC-SDR v04."\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Ocean Color\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "title-toggle"\cf7 \strokec7 >\cf2 \strokec2 NOAA VIIRS SNPP KdPAR Science Quality NRT 0.04\'b0/4km Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 2012-present\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 4 km\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         KdPAR SQ Daily\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         KdPAR SQ Weekly\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         KdPAR SQ Monthly\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         KdPAR NRT Daily\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         KdPAR NRT Weekly\cb1 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-buttons"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 <\cf4 \strokec4 select\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-dropdown"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 ""\cf7 \strokec7 >\cf2 \strokec2 ERDDAP\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/nesdisVHNSQkdparDaily.graph"\cf7 \strokec7 >\cf2 \strokec2 KdPAR SQ Daily\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/nesdisVHNSQkdparWeekly.graph"\cf7 \strokec7 >\cf2 \strokec2 KdPAR SQ Weekly\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/nesdisVHNSQkdparMonthly.graph"\cf7 \strokec7 >\cf2 \strokec2 KdPAR SQ Monthly\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/nesdisVHNkdparDaily.graph"\cf7 \strokec7 >\cf2 \strokec2 KdPAR NRT Daily\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/nesdisVHNkdparWeekly.graph"\cf7 \strokec7 >\cf2 \strokec2 KdPAR NRT Weekly\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 </\cf4 \strokec4 select\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 </\cf4 \strokec4 tr\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 <\cf4 \strokec4 tr\cf2 \strokec2  \cf7 \strokec7 data-description\cf2 \strokec2 =\cf6 \strokec6 "Normalized water leaving radiance (nLw) at 410nm, 443, 486nm, 551nm, 671nm wavelengths. Daily composite data from the Visible and Infrared Imager/Radiometer Suite (VIIRS). The science quality data have a 15-day latency. The data, processed by the NOAA/STAR Ocean Color Team, are produced from MSL12 v1.2 using OC-SDR v04."\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Ocean Color\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "title-toggle"\cf7 \strokec7 >\cf2 \strokec2 NOAA VIIRS SNPP nLw Science Quality NRT 0.04\'b0/4km Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 2012-present\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 4 km\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         nLw410 SQ\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         nLw443 SQ\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         nLw486 SQ\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         nLw551 SQ\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         nLw671 SQ\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         nLw410 NRT\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         nLw443 NRT\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         nLw486 NRT\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         nLw551 NRT\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         nLw671 NRT\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-buttons"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 <\cf4 \strokec4 select\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-dropdown"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 ""\cf7 \strokec7 >\cf2 \strokec2 ERDDAP\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/search/index.html?page=1&itemsPerPage=1000&searchFor=nesdisVHNSQnLw410"\cf7 \strokec7 >\cf2 \strokec2 nLw410 SQ\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/search/index.html?page=1&itemsPerPage=1000&searchFor=nesdisVHNSQnLw443"\cf7 \strokec7 >\cf2 \strokec2 nLw443 SQ\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/search/index.html?page=1&itemsPerPage=1000&searchFor=nesdisVHNSQnLw486"\cf7 \strokec7 >\cf2 \strokec2 nLw486 SQ\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/search/index.html?page=1&itemsPerPage=1000&searchFor=nesdisVHNSQnLw551"\cf7 \strokec7 >\cf2 \strokec2 nLw551 SQ\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/search/index.html?page=1&itemsPerPage=1000&searchFor=nesdisVHNSQnLw671"\cf7 \strokec7 >\cf2 \strokec2 nLw671 SQ\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/search/index.html?page=1&itemsPerPage=1000&searchFor=nesdisVHNnLw410"\cf7 \strokec7 >\cf2 \strokec2 nLw410 NRT\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/search/index.html?page=1&itemsPerPage=1000&searchFor=nesdisVHNnLw443"\cf7 \strokec7 >\cf2 \strokec2 nLw443 NRT\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/search/index.html?page=1&itemsPerPage=1000&searchFor=nesdisVHNnLw486"\cf7 \strokec7 >\cf2 \strokec2 nLw486 NRT\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/search/index.html?page=1&itemsPerPage=1000&searchFor=nesdisVHNnLw551"\cf7 \strokec7 >\cf2 \strokec2 nLw551 NRT\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/search/index.html?page=1&itemsPerPage=1000&searchFor=nesdisVHNnLw671"\cf7 \strokec7 >\cf2 \strokec2 nLw671 NRT\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 </\cf4 \strokec4 tr\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 <\cf4 \strokec4 tr\cf2 \strokec2  \cf7 \strokec7 data-description\cf2 \strokec2 =\cf6 \strokec6 "Particular Organic Carbon and Photosynthetically Available Radiation calculated from MODIS Aqua ocean color data. Primary Productivity is vertically integrated and calculated from satellite measurements of chlorophyll a, PAR, and sea surface temperature using the using the method of Behrenfield & Falkowski (Behrenfield and Falkowski, L&O 1997)."\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Ocean Color\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "title-toggle"\cf7 \strokec7 >\cf2 \strokec2 VIIRS SNPP POC Science Quality 0.04\'b0/4km Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 2012-present\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 4 km\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         POC Daily\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         POC 8-Day\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         POC Monthly\cb1 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-buttons"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 <\cf4 \strokec4 select\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-dropdown"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 ""\cf7 \strokec7 >\cf2 \strokec2 ERDDAP\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdVH2018poc1day.graph"\cf7 \strokec7 >\cf2 \strokec2 POC Daily\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdVH2018poc8day.graph"\cf7 \strokec7 >\cf2 \strokec2 POC 8-Day\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdVH2018pocmday.graph"\cf7 \strokec7 >\cf2 \strokec2 POC Monthly\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 </\cf4 \strokec4 tr\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 <\cf4 \strokec4 tr\cf2 \strokec2  \cf7 \strokec7 data-description\cf2 \strokec2 =\cf6 \strokec6 "Particular Inorganic Carbon and Photosynthetically Available Radiation calculated from MODIS Aqua ocean color data. Primary Productivity is vertically integrated and calculated from satellite measurements of chlorophyll a, PAR, and sea surface temperature using the using the method of Behrenfield & Falkowski (Behrenfield and Falkowski, L&O 1997)."\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Ocean Color\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "title-toggle"\cf7 \strokec7 >\cf2 \strokec2 VIIRS SNPP PIC Science Quality 0.04\'b0/4km Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 2012-present\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 4 km\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         PIC Daily\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         PIC 8-Day\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         PIC Monthly\cb1 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-buttons"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 <\cf4 \strokec4 select\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-dropdown"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 ""\cf7 \strokec7 >\cf2 \strokec2 ERDDAP\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdVH2018pic1day.graph"\cf7 \strokec7 >\cf2 \strokec2 PIC Daily\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdVH2018pic8day.graph"\cf7 \strokec7 >\cf2 \strokec2 PIC 8-Day\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdVH2018picmday.graph"\cf7 \strokec7 >\cf2 \strokec2 PIC Monthly\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 </\cf4 \strokec4 tr\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 <\cf4 \strokec4 tr\cf2 \strokec2  \cf7 \strokec7 data-description\cf2 \strokec2 =\cf6 \strokec6 "Diffuse attenuation coefficient at 490 nm wavelength (Kd490). Daily composite data from MODIS Aqua The science quality data have a 15-day latency."\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Ocean Color\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "title-toggle"\cf7 \strokec7 >\cf2 \strokec2 MODIS Aqua Kd490 Science Quality 0.04\'b0/4km Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 2003-present\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 4 km\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         Kd490 Daily\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         Kd490 8-Day\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         Kd490 Monthly\cb1 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-buttons"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 <\cf4 \strokec4 select\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-dropdown"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 ""\cf7 \strokec7 >\cf2 \strokec2 ERDDAP\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdMH1kd4901day.graph"\cf7 \strokec7 >\cf2 \strokec2 Kd490 Daily\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdMH1kd4908day.graph"\cf7 \strokec7 >\cf2 \strokec2 Kd490 8-Day\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdMH1kd490mday.graph"\cf7 \strokec7 >\cf2 \strokec2 Kd490 Monthly\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 </\cf4 \strokec4 tr\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 <\cf4 \strokec4 tr\cf2 \strokec2  \cf7 \strokec7 data-description\cf2 \strokec2 =\cf6 \strokec6 "Primary Productivity from\'a0 MODIS Aqua ocean color data is vertically integrated and calculated from satellite measurements of chlorophyll a, PAR, and sea surface temperature using the using the method of Behrenfield & Falkowski (Behrenfield and Falkowski, L&O 1997)."\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Ocean Color\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "title-toggle"\cf7 \strokec7 >\cf2 \strokec2 MODIS Aqua 1\'b0 Productivity Science Quality 0.04\'b0/4km Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 2003-present\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 4 km\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         1\'b0 Prod Daily\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         1\'b0 Prod 8-Day\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         1\'b0 Prod Monthly\cb1 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-buttons"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 <\cf4 \strokec4 select\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-dropdown"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 ""\cf7 \strokec7 >\cf2 \strokec2 ERDDAP\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdMH1pp1day.graph"\cf7 \strokec7 >\cf2 \strokec2 1\'b0 Prod Daily\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdMH1ppmday.graph"\cf7 \strokec7 >\cf2 \strokec2 1\'b0 Prod 8-Day\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdMH1ppmday.graph"\cf7 \strokec7 >\cf2 \strokec2 1\'b0 Prod Monthly\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 </\cf4 \strokec4 tr\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 <\cf4 \strokec4 tr\cf2 \strokec2  \cf7 \strokec7 data-description\cf2 \strokec2 =\cf6 \strokec6 "Particular Organic Carbon is calculated from MODIS Aqua ocean color data.\'a0"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Ocean Color\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "title-toggle"\cf7 \strokec7 >\cf2 \strokec2 MODIS Aqua POC Daily Science Quality 0.04\'b0/4km Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 2003-2022\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 4 km\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         POC Daily\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         POC 8-Day\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         POC Monthly\cb1 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-buttons"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 <\cf4 \strokec4 select\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-dropdown"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 ""\cf7 \strokec7 >\cf2 \strokec2 ERDDAP\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdMPOC1day.graph"\cf7 \strokec7 >\cf2 \strokec2 POC Daily\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdMPOC8day.graph"\cf7 \strokec7 >\cf2 \strokec2 POC 8-Day\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdMPOCmday.graph"\cf7 \strokec7 >\cf2 \strokec2 POC Monthly\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 </\cf4 \strokec4 tr\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 <\cf4 \strokec4 tr\cf2 \strokec2  \cf7 \strokec7 data-description\cf2 \strokec2 =\cf6 \strokec6 "Particular Inorganic Carbon is calculated from MODIS Aqua ocean color data.\'a0"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Ocean Color\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "title-toggle"\cf7 \strokec7 >\cf2 \strokec2 MODIS Aqua PIC Daily Science Quality 0.04\'b0/4km Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 2003-2022\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 4 km\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         PIC Daily\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         PIC 8-Day\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         PIC Monthly\cb1 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-buttons"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 <\cf4 \strokec4 select\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-dropdown"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 ""\cf7 \strokec7 >\cf2 \strokec2 ERDDAP\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdMPIC1day.graph"\cf7 \strokec7 >\cf2 \strokec2 PIC Daily\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdMPIC8day.graph"\cf7 \strokec7 >\cf2 \strokec2 PIC 8-Day\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdMPICmday.graph"\cf7 \strokec7 >\cf2 \strokec2 PIC Monthly\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 </\cf4 \strokec4 tr\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 <\cf4 \strokec4 tr\cf2 \strokec2  \cf7 \strokec7 data-description\cf2 \strokec2 =\cf6 \strokec6 "Photosynthetically Available Radiation is calculated from MODIS Aqua ocean color data."\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Ocean Color\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "title-toggle"\cf7 \strokec7 >\cf2 \strokec2 MODIS Aqua PAR Daily Science Quality 0.04\'b0/4km Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 2003-2023\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 4 km\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         PAR Daily\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         PAR 8-Day\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         PAR Monthly\cb1 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-buttons"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 <\cf4 \strokec4 select\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-dropdown"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 ""\cf7 \strokec7 >\cf2 \strokec2 ERDDAP\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdMH1par01day.graph"\cf7 \strokec7 >\cf2 \strokec2 PAR Daily\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdMH1par08day.graph"\cf7 \strokec7 >\cf2 \strokec2 PAR 8-Day\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdMH1par0mday.graph"\cf7 \strokec7 >\cf2 \strokec2 PAR Monthly\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 </\cf4 \strokec4 tr\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 <\cf4 \strokec4 tr\cf2 \strokec2  \cf7 \strokec7 data-description\cf2 \strokec2 =\cf6 \strokec6 "This data begins with wind velocity measurements from the ASCAT instrument onboard EUMETSAT's Metop-A satellite. ASCAT is a microwave scatterometer designed to measure surface winds over the global ocean. NOAA CoastWatch processes zonal and meridional winds (vector winds) to obtain scalar winds (modulus), wind stress, wind curl, wind divergence, wind driven currents, and Ekman upwelling."\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Wind\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "title-toggle"\cf7 \strokec7 >\cf2 \strokec2 ASCAT MetOp Wind (Vector Winds) NRT 0.25\'b0/25km Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         2009-present\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         2013-present\cb1 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 25 km\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         ASCAT A\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         ASCAT B\cb1 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-buttons"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 <\cf4 \strokec4 select\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-dropdown"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 ""\cf7 \strokec7 >\cf2 \strokec2 ERDDAP\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/search/index.html?page=1&itemsPerPage=1000&searchFor=erdQAwind"\cf7 \strokec7 >\cf2 \strokec2 ASCAT A\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/search/index.html?page=1&itemsPerPage=1000&searchFor=erdQBwind"\cf7 \strokec7 >\cf2 \strokec2 ASCAT B\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 </\cf4 \strokec4 tr\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 <\cf4 \strokec4 tr\cf2 \strokec2  \cf7 \strokec7 data-description\cf2 \strokec2 =\cf6 \strokec6 "This data begins with wind velocity measurements from the ASCAT instrument onboard EUMETSAT's Metop-A satellite. ASCAT is a microwave scatterometer designed to measure surface winds over the global ocean. NOAA CoastWatch processes zonal and meridional winds (vector winds) to obtain scalar winds (modulus), wind stress, wind curl, wind divergence, wind driven currents, and Ekman upwelling."\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Wind\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "title-toggle"\cf7 \strokec7 >\cf2 \strokec2 ASCAT MetOp Wind Stress NRT 0.25\'b0/25km Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         2009-present\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         2013-present\cb1 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 25 km\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         ASCAT A\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         ASCAT B\cb1 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-buttons"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 <\cf4 \strokec4 select\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-dropdown"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 ""\cf7 \strokec7 >\cf2 \strokec2 ERDDAP\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/search/index.html?page=1&itemsPerPage=1000&searchFor=erdQAstress"\cf7 \strokec7 >\cf2 \strokec2 ASCAT A\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/search/index.html?page=1&itemsPerPage=1000&searchFor=erdQBstress"\cf7 \strokec7 >\cf2 \strokec2 ASCAT B\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 </\cf4 \strokec4 tr\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 <\cf4 \strokec4 tr\cf2 \strokec2  \cf7 \strokec7 data-description\cf2 \strokec2 =\cf6 \strokec6 "This data begins with wind velocity measurements from the ASCAT instrument onboard EUMETSAT's Metop-A satellite. ASCAT is a microwave scatterometer designed to measure surface winds over the global ocean. NOAA CoastWatch processes zonal and meridional winds (vector winds) to obtain scalar winds (modulus), wind stress, wind curl, wind divergence, wind driven currents, and Ekman upwelling."\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Wind\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "title-toggle"\cf7 \strokec7 >\cf2 \strokec2 ASCAT MetOp Wind Diffusivity Current NRT 0.25\'b0/25km Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         2009-present\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         2013-present\cb1 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 25 km\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         ASCAT A\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         ASCAT B\cb1 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-buttons"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 <\cf4 \strokec4 select\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-dropdown"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 ""\cf7 \strokec7 >\cf2 \strokec2 ERDDAP\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/search/index.html?page=1&itemsPerPage=1000&searchFor=erdQAekm"\cf7 \strokec7 >\cf2 \strokec2 ASCAT A\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/search/index.html?page=1&itemsPerPage=1000&searchFor=erdQBekm"\cf7 \strokec7 >\cf2 \strokec2 ASCAT B\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 </\cf4 \strokec4 tr\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 <\cf4 \strokec4 tr\cf2 \strokec2  \cf7 \strokec7 data-description\cf2 \strokec2 =\cf6 \strokec6 "This data begins with wind velocity measurements from the ASCAT instrument onboard EUMETSAT's Metop-A satellite. ASCAT is a microwave scatterometer designed to measure surface winds over the global ocean. NOAA CoastWatch processes zonal and meridional winds (vector winds) to obtain scalar winds (modulus), wind stress, wind curl, wind divergence, wind driven currents, and Ekman upwelling."\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Wind\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "title-toggle"\cf7 \strokec7 >\cf2 \strokec2 ASCAT MetOp-C All Parameters NRT 0.25\'b0/25km Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 2020-present\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 25 km\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         4hr Ascending\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         4hr Descending\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         1-Day\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         3-Day\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         7-Day\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         Monthly\cb1 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-buttons"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 <\cf4 \strokec4 select\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-dropdown"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 ""\cf7 \strokec7 >\cf2 \strokec2 ERDDAP\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdQCwindproducts4hrAscending.graph"\cf7 \strokec7 >\cf2 \strokec2 4hr Ascending\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdQCwindproducts4hrDecending.graph"\cf7 \strokec7 >\cf2 \strokec2 4hr Descending\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdQCwindproducts1day.graph"\cf7 \strokec7 >\cf2 \strokec2 1-Day\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdQCwindproducts3day.graph"\cf7 \strokec7 >\cf2 \strokec2 3-Day\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdQCwindproducts7day.graph"\cf7 \strokec7 >\cf2 \strokec2 7-Day\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdQCwindproductsMonthly.graph"\cf7 \strokec7 >\cf2 \strokec2 Monthly\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 </\cf4 \strokec4 tr\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 <\cf4 \strokec4 tr\cf2 \strokec2  \cf7 \strokec7 data-description\cf2 \strokec2 =\cf6 \strokec6 "Remote Sensing Inc. distributes science quality wind velocity data from the SeaWinds instrument onboard the NASA QuikSCAT satellite. SeaWinds is a microwave scatterometer designed to measure surface winds over the global ocean. Wind velocity fields are provided in zonal, meridional sets. The reference height for all wind velocities is 10 meters. NOAA CoastWatch processes zonal and meridional winds (vector winds) to obtain scalar winds (modulus), wind stress, wind curl, wind divergence, wind driven currents, and Ekman upwelling."\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Wind\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "title-toggle"\cf7 \strokec7 >\cf2 \strokec2 QuikSCAT SeaWinds Wind Science Quality 0.125\'b0/1.25km Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         1999-2009\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         2007-2007\cb1 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 1.25 km\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Vector Winds\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-buttons"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 <\cf4 \strokec4 select\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-dropdown"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 ""\cf7 \strokec7 >\cf2 \strokec2 ERDDAP\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/search/index.html?page=1&itemsPerPage=1000&searchFor=erdQSwind"\cf7 \strokec7 >\cf2 \strokec2 Vector Winds\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 </\cf4 \strokec4 tr\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 <\cf4 \strokec4 tr\cf2 \strokec2  \cf7 \strokec7 data-description\cf2 \strokec2 =\cf6 \strokec6 "Remote Sensing Inc. distributes science quality wind velocity data from the SeaWinds instrument onboard the NASA QuikSCAT satellite. SeaWinds is a microwave scatterometer designed to measure surface winds over the global ocean. Wind velocity fields are provided in zonal, meridional sets. The reference height for all wind velocities is 10 meters. NOAA CoastWatch processes zonal and meridional winds (vector winds) to obtain scalar winds (modulus), wind stress, wind curl, wind divergence, wind driven currents, and Ekman upwelling."\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Wind\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "title-toggle"\cf7 \strokec7 >\cf2 \strokec2 QuikSCAT SeaWinds Wind Stress Science Quality 0.125\'b0/1.25km Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 1999-2009\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 1.25 km\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Wind Stress\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-buttons"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 <\cf4 \strokec4 select\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-dropdown"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 ""\cf7 \strokec7 >\cf2 \strokec2 ERDDAP\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/search/index.html?page=1&itemsPerPage=1000&searchFor=erdQSstress"\cf7 \strokec7 >\cf2 \strokec2 Wind Stress\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 </\cf4 \strokec4 tr\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 <\cf4 \strokec4 tr\cf2 \strokec2  \cf7 \strokec7 data-description\cf2 \strokec2 =\cf6 \strokec6 "Remote Sensing Inc. distributes science quality wind velocity data from the SeaWinds instrument onboard the NASA QuikSCAT satellite. SeaWinds is a microwave scatterometer designed to measure surface winds over the global ocean. Wind velocity fields are provided in zonal, meridional sets. The reference height for all wind velocities is 10 meters. NOAA CoastWatch processes zonal and meridional winds (vector winds) to obtain scalar winds (modulus), wind stress, wind curl, wind divergence, wind driven currents, and Ekman upwelling."\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Wind\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "title-toggle"\cf7 \strokec7 >\cf2 \strokec2 QuikSCAT SeaWinds Wind Diffusivity Current Science Quality 0.125\'b0/1.25km Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 1999-2010\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 1.25 km\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Wind Diffusivity Current\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-buttons"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 <\cf4 \strokec4 select\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-dropdown"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 ""\cf7 \strokec7 >\cf2 \strokec2 ERDDAP\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/search/index.html?page=1&itemsPerPage=1000&searchFor=erdQSekm"\cf7 \strokec7 >\cf2 \strokec2 Wind Diffusivity Current\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 </\cf4 \strokec4 tr\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 <\cf4 \strokec4 tr\cf2 \strokec2  \cf7 \strokec7 data-description\cf2 \strokec2 =\cf6 \strokec6 "Sea Surface Salinity - Near Real Time - Miras SMOS 3-Day Mean. CoastWatch/OceanWatch Level-3 SSS products are generated directly from the ESA MIRAS SMOS Level-2. The CoastWatch L3 product ingests the SSS with values between 25 - 40 Practical Salinity Scale (PSS). These products improve the application of satellite SSS products in NOAA by minimizing the data latency to within 24 hours of Level-2 data availability."\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Salinity\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "title-toggle"\cf7 \strokec7 >\cf2 \strokec2 Soil Moisture and Ocean Salinity (SMOS) NRT 0.25\'b0/25km Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 2010-present\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 25 km\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         Daily\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         3-Day\cb1 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-buttons"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 <\cf4 \strokec4 select\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-dropdown"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 ""\cf7 \strokec7 >\cf2 \strokec2 ERDDAP\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/coastwatchSMOSv662SSS1day.graph"\cf7 \strokec7 >\cf2 \strokec2 Daily\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/coastwatchSMOSv662SSS3day.graph"\cf7 \strokec7 >\cf2 \strokec2 3-Day\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 </\cf4 \strokec4 tr\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 <\cf4 \strokec4 tr\cf2 \strokec2  \cf7 \strokec7 data-description\cf2 \strokec2 =\cf6 \strokec6 "Sea Surface Salinity - Near Real Time - SMAP Daily Composite. CoastWatch/OceanWatch Level-3 SSS products are generated directly from the NASA Jet Propulsion Laboratory (JPL) SMAP Level-2B SSS near real time swath HDF5 files. These products improve the application of satellite SSS products in NOAA by minimizing the data latency to within 24 hours of Level-2 data availability."\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Salinity\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "title-toggle"\cf7 \strokec7 >\cf2 \strokec2 Soil Moisture Active Passive (SMAP) NRT 0.25\'b0/25km Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 2015-present\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 25 km\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Daily\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-buttons"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 <\cf4 \strokec4 select\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-dropdown"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 ""\cf7 \strokec7 >\cf2 \strokec2 ERDDAP\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.noaa.gov/erddap/griddap/noaacwSMAPsssDaily.graph"\cf7 \strokec7 >\cf2 \strokec2 Daily\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 </\cf4 \strokec4 tr\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 <\cf4 \strokec4 tr\cf2 \strokec2  \cf7 \strokec7 data-description\cf2 \strokec2 =\cf6 \strokec6 "This dataset has daily composites of Aquarius Sea Surface Salinity data, version 5. Part of NASA's Earth System Science Pathfinder (ESSP) Mission International Partnership between NASA and CONAE, Aquarius provides unprecedented global maps of surface sea water salinity (SSS) to discover how our oceans respond to climate change and the water cycle. Sea surface salinity, along with sea surface temperature, determines the sea surface density. This controls the formation of water masses in the ocean and regulates the 3-dimensional ocean circulation."\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Salinity\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "title-toggle"\cf7 \strokec7 >\cf2 \strokec2 Aquarius Salinity 1.0\'b0/100km Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 2011-2015\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 100 km\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 7-Day\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-buttons"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 <\cf4 \strokec4 select\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-dropdown"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 ""\cf7 \strokec7 >\cf2 \strokec2 ERDDAP\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/iprcAquariusOISSS7day.graph"\cf7 \strokec7 >\cf2 \strokec2 7-Day\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 </\cf4 \strokec4 tr\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 <\cf4 \strokec4 tr\cf2 \strokec2  \cf7 \strokec7 data-description\cf2 \strokec2 =\cf6 \strokec6 "The altimetry data are from the Radar Altimetry Database System (RADS), first developed at Delft University of Technology, now also at the NOAA and the European Organisation for the Exploitation of Meteorological Satellites (EUMETSAT). The RADS data for each mission is updated with state of the art corrections for tides, atmospheric path delay, etc. Because they are all computed consistently between the various missions, this avoids the possibility of introducing biases and drifts because of the different implementation of the various corrections by different agencies."\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         Sea Level\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         Geostrophic Currents\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "title-toggle"\cf7 \strokec7 >\cf2 \strokec2 NOAA CoastWatch Alimetry Sea Level Anomaly Geostrophic Currents 0.25\'b0/25km Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 2017-present\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 25 km\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Daily\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-buttons"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 <\cf4 \strokec4 select\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-dropdown"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 ""\cf7 \strokec7 >\cf2 \strokec2 ERDDAP\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/nesdisSSH1day.graph"\cf7 \strokec7 >\cf2 \strokec2 Daily\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 </\cf4 \strokec4 tr\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 <\cf4 \strokec4 tr\cf2 \strokec2  \cf7 \strokec7 data-description\cf2 \strokec2 =\cf6 \strokec6 "Aviso Absolute Sea Surface Height is the Sea Surface Height Deviation plus the long term mean dynamic height."\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Sea Level\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "title-toggle"\cf7 \strokec7 >\cf2 \strokec2 AVISO Alimetry Sea Surface Height & Anomaly Science Quality 0.25\'b0/25km Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         1992-2012\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         1992-2010\cb1 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 25 km\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         Daily\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         Monthly\cb1 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-buttons"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 <\cf4 \strokec4 select\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-dropdown"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 ""\cf7 \strokec7 >\cf2 \strokec2 ERDDAP\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdTAssh1day.graph"\cf7 \strokec7 >\cf2 \strokec2 Daily\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdTAsshmday.graph"\cf7 \strokec7 >\cf2 \strokec2 Monthly\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 </\cf4 \strokec4 tr\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 <\cf4 \strokec4 tr\cf2 \strokec2  \cf7 \strokec7 data-description\cf2 \strokec2 =\cf6 \strokec6 "This dataset delivers daily global composites of geostrophic surface-current velocities at 25 km resolution. The geostrophic currents are inferred from satellite-measured sea-surface-height deviations combined with climatological dynamic-height fields using basic fluid-mechanics principles."\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Geostrophic Currents\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "title-toggle"\cf7 \strokec7 >\cf2 \strokec2 AVISO Alimetry Geostrophic Currents Science Quality 0.25\'b0/25km Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         1992-2012\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         1992-2019\cb1 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 25 km\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \strokec2 Global\cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         Daily\cf7 \strokec7 <\cf4 \strokec4 br\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         Monthly\cb1 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 <\cf4 \strokec4 td\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-buttons"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3         \cf7 \strokec7 <\cf4 \strokec4 select\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf6 \strokec6 "access-dropdown"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 ""\cf7 \strokec7 >\cf2 \strokec2 ERDDAP\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdTAgeo1day.graph"\cf7 \strokec7 >\cf2 \strokec2 Daily\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3           \cf7 \strokec7 <\cf4 \strokec4 option\cf2 \strokec2  \cf7 \strokec7 value\cf2 \strokec2 =\cf6 \strokec6 "https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdTAgeomday.graph"\cf7 \strokec7 >\cf2 \strokec2 Monthly\cf7 \strokec7 </\cf4 \strokec4 option\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3       \cf7 \strokec7 </\cf4 \strokec4 td\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3     \cf7 \strokec7 </\cf4 \strokec4 tr\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cb3   \cf7 \strokec7 </\cf4 \strokec4 tbody\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\pard\pardeftab720\partightenfactor0
+\cf7 \cb3 \strokec7 </\cf4 \strokec4 table\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f2\i \cf7 \cb3 \strokec7 <!-- jQuery + DataTables -->
+\f0\i0 \cf2 \cb1 \strokec2 \
+\pard\pardeftab720\partightenfactor0
+\cf7 \cb3 \strokec7 <\cf4 \strokec4 script\cf2 \strokec2  \cf7 \strokec7 src\cf2 \strokec2 =\cf6 \strokec6 "https://code.jquery.com/jquery-3.6.0.min.js"\cf7 \strokec7 ></\cf4 \strokec4 script\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cf7 \cb3 \strokec7 <\cf4 \strokec4 link\cf2 \strokec2  \cf7 \strokec7 href\cf2 \strokec2 =\cf6 \strokec6 "https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css"\cf2 \strokec2  \cf7 \strokec7 rel\cf2 \strokec2 =\cf6 \strokec6 "stylesheet"\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\cf7 \cb3 \strokec7 <\cf4 \strokec4 script\cf2 \strokec2  \cf7 \strokec7 src\cf2 \strokec2 =\cf6 \strokec6 "https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"\cf7 \strokec7 ></\cf4 \strokec4 script\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f2\i \cf7 \cb3 \strokec7 <!-- Activate table + click-to-toggle description -->
+\f0\i0 \cf2 \cb1 \strokec2 \
+\pard\pardeftab720\partightenfactor0
+\cf7 \cb3 \strokec7 <\cf4 \strokec4 script\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3   \cf4 \strokec4 $\cf2 \strokec2 (\cf4 \strokec4 document\cf2 \strokec2 ).\cf4 \strokec4 ready\cf2 \strokec2 (
+\f1\b \cf8 \strokec8 function
+\f0\b0 \cf2 \strokec2  () \{\cb1 \
+\cb3     
+\f1\b \cf8 \strokec8 const
+\f0\b0 \cf2 \strokec2  \cf4 \strokec4 table\cf2 \strokec2  \cf9 \strokec9 =\cf2 \strokec2  \cf4 \strokec4 $\cf2 \strokec2 (\cf6 \strokec6 '#catalog'\cf2 \strokec2 ).\cf4 \strokec4 DataTable\cf2 \strokec2 (\{\cb1 \
+\cb3       lengthChange: \cf5 \strokec5 false\cf2 \strokec2 ,\cb1 \
+\cb3       columnDefs: [\cb1 \
+\cb3         \{\cb1 \
+\cb3           targets: \cf10 \strokec10 0\cf2 \strokec2 ,       
+\f2\i \cf7 \strokec7 // Hide Category column
+\f0\i0 \cf2 \cb1 \strokec2 \
+\cb3           visible: \cf5 \strokec5 false\cf2 \strokec2 ,\cb1 \
+\cb3           searchable: \cf5 \strokec5 true\cf2 \cb1 \strokec2 \
+\cb3         \},\cb1 \
+\cb3         \{\cb1 \
+\cb3           targets: \cf10 \strokec10 1\cf2 \strokec2 ,       
+\f2\i \cf7 \strokec7 // Title column
+\f0\i0 \cf2 \cb1 \strokec2 \
+\cb3           width: \cf6 \strokec6 "25%"\cf2 \cb1 \strokec2 \
+\cb3         \},\cb1 \
+\cb3         \{\cb1 \
+\cb3           targets: \cf10 \strokec10 5\cf2 \strokec2 ,       
+\f2\i \cf7 \strokec7 // Composite column
+\f0\i0 \cf2 \cb1 \strokec2 \
+\cb3           width: \cf6 \strokec6 "25%"\cf2 \cb1 \strokec2 \
+\cb3         \}\cb1 \
+\cb3       ]\cb1 \
+\cb3     \});\cb1 \
+\
+\cb3     
+\f2\i \cf7 \strokec7 // Filter by category
+\f0\i0 \cf2 \cb1 \strokec2 \
+\cb3     \cf4 \strokec4 $\cf2 \strokec2 (\cf6 \strokec6 'input[name="category"]'\cf2 \strokec2 ).\cf4 \strokec4 on\cf2 \strokec2 (\cf6 \strokec6 'change'\cf2 \strokec2 , 
+\f1\b \cf8 \strokec8 function
+\f0\b0 \cf2 \strokec2  () \{\cb1 \
+\cb3       
+\f1\b \cf8 \strokec8 const
+\f0\b0 \cf2 \strokec2  \cf4 \strokec4 category\cf2 \strokec2  \cf9 \strokec9 =\cf2 \strokec2  \cf4 \strokec4 $\cf2 \strokec2 (\cf4 \strokec4 this\cf2 \strokec2 ).\cf4 \strokec4 val\cf2 \strokec2 ();\cb1 \
+\cb3       \cf4 \strokec4 table\cf2 \strokec2 .\cf4 \strokec4 column\cf2 \strokec2 (\cf10 \strokec10 0\cf2 \strokec2 ).\cf4 \strokec4 search\cf2 \strokec2 (\cf4 \strokec4 category\cf2 \strokec2  \cf9 \strokec9 ===\cf2 \strokec2  \cf6 \strokec6 'All'\cf2 \strokec2  \cf9 \strokec9 ?\cf2 \strokec2  \cf6 \strokec6 ''\cf2 \strokec2  \cf9 \strokec9 :\cf2 \strokec2  \cf6 \strokec6 '^'\cf2 \strokec2  \cf9 \strokec9 +\cf2 \strokec2  \cf4 \strokec4 category\cf2 \strokec2  \cf9 \strokec9 +\cf2 \strokec2  \cf6 \strokec6 '$'\cf2 \strokec2 , \cf5 \strokec5 true\cf2 \strokec2 , \cf5 \strokec5 false\cf2 \strokec2 ).\cf4 \strokec4 draw\cf2 \strokec2 ();\cb1 \
+\cb3     \});\cb1 \
+\
+\cb3     
+\f2\i \cf7 \strokec7 // Toggle description when title clicked
+\f0\i0 \cf2 \cb1 \strokec2 \
+\cb3     \cf4 \strokec4 $\cf2 \strokec2 (\cf6 \strokec6 '#catalog tbody'\cf2 \strokec2 ).\cf4 \strokec4 on\cf2 \strokec2 (\cf6 \strokec6 'click'\cf2 \strokec2 , \cf6 \strokec6 'td.title-toggle'\cf2 \strokec2 , 
+\f1\b \cf8 \strokec8 function
+\f0\b0 \cf2 \strokec2  () \{\cb1 \
+\cb3       
+\f1\b \cf8 \strokec8 const
+\f0\b0 \cf2 \strokec2  \cf4 \strokec4 tr\cf2 \strokec2  \cf9 \strokec9 =\cf2 \strokec2  \cf4 \strokec4 $\cf2 \strokec2 (\cf4 \strokec4 this\cf2 \strokec2 ).\cf4 \strokec4 closest\cf2 \strokec2 (\cf6 \strokec6 'tr'\cf2 \strokec2 );\cb1 \
+\cb3       
+\f1\b \cf8 \strokec8 const
+\f0\b0 \cf2 \strokec2  \cf4 \strokec4 row\cf2 \strokec2  \cf9 \strokec9 =\cf2 \strokec2  \cf4 \strokec4 table\cf2 \strokec2 .\cf4 \strokec4 row\cf2 \strokec2 (\cf4 \strokec4 tr\cf2 \strokec2 );\cb1 \
+\
+\cb3       \cf9 \strokec9 if\cf2 \strokec2  (\cf4 \strokec4 row\cf2 \strokec2 .\cf4 \strokec4 child\cf2 \strokec2 .\cf4 \strokec4 isShown\cf2 \strokec2 ()) \{\cb1 \
+\cb3         \cf4 \strokec4 row\cf2 \strokec2 .\cf4 \strokec4 child\cf2 \strokec2 .\cf4 \strokec4 hide\cf2 \strokec2 ();\cb1 \
+\cb3         \cf4 \strokec4 tr\cf2 \strokec2 .\cf4 \strokec4 removeClass\cf2 \strokec2 (\cf6 \strokec6 'shown'\cf2 \strokec2 );\cb1 \
+\cb3       \} \cf9 \strokec9 else\cf2 \strokec2  \{\cb1 \
+\cb3         
+\f1\b \cf8 \strokec8 const
+\f0\b0 \cf2 \strokec2  \cf4 \strokec4 description\cf2 \strokec2  \cf9 \strokec9 =\cf2 \strokec2  \cf4 \strokec4 tr\cf2 \strokec2 .\cf4 \strokec4 data\cf2 \strokec2 (\cf6 \strokec6 'description'\cf2 \strokec2 ) \cf9 \strokec9 ||\cf2 \strokec2  \cf6 \strokec6 'No description available.'\cf2 \strokec2 ;\cb1 \
+\cb3         \cf4 \strokec4 row\cf2 \strokec2 .\cf4 \strokec4 child\cf2 \strokec2 (\cf6 \strokec6 `<div style="padding: 1rem; font-size: 0.95rem; color: #444;">$\{\cf4 \strokec4 description\cf6 \strokec6 \}</div>`\cf2 \strokec2 ).\cf4 \strokec4 show\cf2 \strokec2 ();\cb1 \
+\cb3         \cf4 \strokec4 tr\cf2 \strokec2 .\cf4 \strokec4 addClass\cf2 \strokec2 (\cf6 \strokec6 'shown'\cf2 \strokec2 );\cb1 \
+\cb3       \}\cb1 \
+\cb3     \});\cb1 \
+\
+\cb3     
+\f2\i \cf7 \strokec7 // Reset dropdown after opening selected link
+\f0\i0 \cf2 \cb1 \strokec2 \
+\cb3     \cf4 \strokec4 $\cf2 \strokec2 (\cf6 \strokec6 '#catalog tbody'\cf2 \strokec2 ).\cf4 \strokec4 on\cf2 \strokec2 (\cf6 \strokec6 'change'\cf2 \strokec2 , \cf6 \strokec6 '.access-dropdown'\cf2 \strokec2 , 
+\f1\b \cf8 \strokec8 function
+\f0\b0 \cf2 \strokec2  () \{\cb1 \
+\cb3       
+\f1\b \cf8 \strokec8 const
+\f0\b0 \cf2 \strokec2  \cf4 \strokec4 selectedUrl\cf2 \strokec2  \cf9 \strokec9 =\cf2 \strokec2  \cf4 \strokec4 this\cf2 \strokec2 .\cf4 \strokec4 value\cf2 \strokec2 ;\cb1 \
+\cb3       
+\f1\b \cf8 \strokec8 const
+\f0\b0 \cf2 \strokec2  \cf4 \strokec4 selectEl\cf2 \strokec2  \cf9 \strokec9 =\cf2 \strokec2  \cf4 \strokec4 this\cf2 \strokec2 ;\cb1 \
+\
+\cb3       \cf9 \strokec9 if\cf2 \strokec2  (\cf4 \strokec4 selectedUrl\cf2 \strokec2 ) \{\cb1 \
+\cb3         \cf4 \strokec4 window\cf2 \strokec2 .\cf4 \strokec4 open\cf2 \strokec2 (\cf4 \strokec4 selectedUrl\cf2 \strokec2 , \cf6 \strokec6 '_blank'\cf2 \strokec2 );\cb1 \
+\cb3         \cf4 \strokec4 setTimeout\cf2 \strokec2 (() 
+\f1\b \cf8 \strokec8 =>
+\f0\b0 \cf2 \strokec2  \{\cb1 \
+\cb3           \cf4 \strokec4 selectEl\cf2 \strokec2 .\cf4 \strokec4 selectedIndex\cf2 \strokec2  \cf9 \strokec9 =\cf2 \strokec2  \cf10 \strokec10 0\cf2 \strokec2 ;\cb1 \
+\cb3         \}, \cf10 \strokec10 100\cf2 \strokec2 );\cb1 \
+\cb3       \}\cb1 \
+\cb3     \});\cb1 \
+\cb3   \});\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf7 \cb3 \strokec7 </\cf4 \strokec4 script\cf7 \strokec7 >\cf2 \cb1 \strokec2 \
+\
+}

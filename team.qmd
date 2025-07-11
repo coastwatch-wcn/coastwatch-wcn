@@ -1,0 +1,38 @@
+---
+title: "Our Team"
+anchor-sections: false
+page-layout: full
+format:
+  html:
+    toc: false
+---
+
+::: {style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem;"}
+  
+::: {.team-card}
+<h3>Cara Wilson</h3>
+<h5>Node Manager</h5>
+<p>Cara Wilson, as PolarWatch Node Manager, leverages her oceanography and remote sensing expertise to enhance user engagement and education through satellite trainings.</p>
+:::
+
+::: {.team-card}
+<h3>Dale Robinson</h3>
+<h5>Research Lead</h5>
+<p>Dale Robinson contributes his specialized knowledge in oceanography, satellite data analysis and polar region research.</p>
+:::
+:::
+
+::: {style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem;"}
+  
+::: {.team-card}
+<h3>Roy Mendelssohn</h3>
+<h5>Operational/Technical Support, Southwest Fisheries Science Center</h5>
+<p>Roy Mendelssohn, from the Southwest Fisheries Science Center, supports operations of CoastWatch servers and data management.</p>
+:::
+
+::: {.team-card}
+<h3>Lynn deWitt</h3>
+<h5>IT Specialist, Southwest Fisheries Science Center</h5>
+<p>Lynn deWitt, from the Southwest Fisheries Science Center, supports product development and data management.</p>
+:::
+:::
