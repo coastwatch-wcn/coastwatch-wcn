@@ -595,6 +595,12 @@ details a:hover {
   object-fit: cover;
   border-radius: 6px;
   margin-bottom: 1rem;
+  cursor: zoom-in;
+  transition: transform 0.2s ease;
+}
+
+.tutorial-card img:hover {
+  transform: scale(1.02);
 }
 
 .tags {
@@ -642,16 +648,6 @@ details a:hover {
 
 .info-gray {
   background-color: #f3f3f3;
-}
-
-/* Make image slightly zoom on hover */
-.tutorial-card img {
-  cursor: zoom-in;
-  transition: transform 0.2s ease;
-}
-
-.tutorial-card img:hover {
-  transform: scale(1.02);
 }
 
 .about-card {

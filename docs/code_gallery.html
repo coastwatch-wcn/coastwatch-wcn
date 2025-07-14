@@ -202,7 +202,7 @@ To view all tutorials, visit our <a href="https://github.com/coastwatch-training
 </p>
 <div class="tutorial-grid">
 <div class="tutorial-card">
-<a href="images/basics.png" class="lightbox" target="_blank"> <img src="images/basics.png" alt="basics"> </a>
+<img src="images/basics.png" alt="basics" style="cursor: zoom-in;" onclick="openLightbox(this.src)">
 <div class="tags">
 PYTHON, R, MATLAB
 </div>
@@ -217,7 +217,7 @@ Learn how to access ERDDAP data, handle NetCDF files, and create SST maps and ti
 </p>
 </div>
 <div class="tutorial-card">
-<a href="images/extract_data.png" class="lightbox" target="_blank"> <img src="images/extract_data.png" alt="Extract Data Within Boundary"> </a>
+<img src="images/extract_data.png" alt="Extract Data Within Boundary" style="cursor: zoom-in;" onclick="openLightbox(this.src)">
 <div class="tags">
 PYTHON, R, MATLAB
 </div>
@@ -232,7 +232,7 @@ Learn how to download SST time series data from an ERDDAP server, mask the data 
 </p>
 </div>
 <div class="tutorial-card">
-<a href="images/telemetry_animal.png" class="lightbox" target="_blank"> <img src="images/telemetry_animal.png" alt="Telemetry Data"> </a>
+<img src="images/telemetry_animal.png" alt="Telemetry Data" style="cursor: zoom-in;" onclick="openLightbox(this.src)">
 <div class="tags">
 PYTHON, R
 </div>
@@ -247,7 +247,7 @@ Learn how to extract satellite data around a set of points defined by longitude,
 </p>
 </div>
 <div class="tutorial-card">
-<a href="images/timeseries_comparison.png" class="lightbox" target="_blank"> <img src="images/timeseries_comparison.png" alt="Time Series Comparison"> </a>
+<img src="images/timeseries_comparison.png" alt="Time Series Comparison" style="cursor: zoom-in;" onclick="openLightbox(this.src)">
 <div class="tags">
 PYTHON, R, MATLAB
 </div>
@@ -262,7 +262,7 @@ Learn how to extract a time-series of monthly satellite chlorophyll data for the
 </p>
 </div>
 <div class="tutorial-card">
-<a href="images/satbuoy.png" class="lightbox" target="_blank"> <img src="images/satbuoy.png" alt="Match Satellite Buoy"> </a>
+<img src="images/satbuoy.png" alt="Match Satellite Buoy" style="cursor: zoom-in;" onclick="openLightbox(this.src)">
 <div class="tags">
 R
 </div>
@@ -277,7 +277,7 @@ Learn how to match up satellite data to in situ buoy data using rerddap and rxtr
 </p>
 </div>
 <div class="tutorial-card">
-<a href="images/marinehab.png" class="lightbox" target="_blank"> <img src="images/marinehab.png" alt="Marine Habitat"> </a>
+<img src="images/marinehab.png" alt="Marine Habitat" style="cursor: zoom-in;" onclick="openLightbox(this.src)">
 <div class="tags">
 PYTHON, R
 </div>
@@ -292,7 +292,7 @@ Learn how to map satellite sea surface temperature and overlay the 17.5ºC and 1
 </p>
 </div>
 <div class="tutorial-card">
-<a href="images/convert.png" class="lightbox" target="_blank"> <img src="images/convert.png" alt="Convert Longitude"> </a>
+<img src="images/convert.png" alt="Convert Longitude" style="cursor: zoom-in;" onclick="openLightbox(this.src)">
 <div class="tags">
 PYTHON
 </div>
@@ -307,7 +307,7 @@ Learn how to use datasets with -180 to +180 longitude values to work within regi
 </p>
 </div>
 <div class="tutorial-card">
-<a href="images/virtual_buoy.png" class="lightbox" target="_blank"> <img src="images/virtual_buoy.png" alt="Virtual Buoy"> </a>
+<img src="images/virtual_buoy.png" alt="Virtual Buoy" style="cursor: zoom-in;" onclick="openLightbox(this.src)">
 <div class="tags">
 PYTHON, R
 </div>
@@ -322,6 +322,22 @@ Learn how to create a time series from satellite data to gap-fill or replace buo
 </p>
 </div>
 </div>
+<!-- Lightbox Container -->
+<div id="lightbox" style="display:none !important; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.85); display:flex; justify-content:center; align-items:center; z-index:9999;" onclick="closeLightbox()">
+<p><img id="lightbox-img" src="" style="max-width:95vw; max-height:90vh; box-shadow:0 0 20px black; cursor:zoom-out; object-fit: contain;"></p>
+</div>
+<!-- Lightbox Script -->
+<script>
+function openLightbox(src) {
+  const img = document.getElementById('lightbox-img');
+  const box = document.getElementById('lightbox');
+  img.src = src;
+  box.style.display = 'flex';
+}
+function closeLightbox() {
+  document.getElementById('lightbox').style.display = 'none';
+}
+</script>
 
 
 
