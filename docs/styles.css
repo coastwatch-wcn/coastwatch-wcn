@@ -1,86 +1,106 @@
 /* css styles */
 
-/* Edit logo on navbar*/
+/* ---------------------------------- */
+/* NAVBAR                            */
+/* ---------------------------------- */
+
+/* Adjusts the height of the logo in the top navbar */
 .navbar-brand img {
-  height: 60px;
-  max-height: none;
+  height: 60px;           /* fixed height for logo */
+  max-height: none;       /* disables any browser-imposed limit */
 }
 
+/* ---------------------------------- */
+/* HERO IMAGE CARD (Homepage banner) */
+/* ---------------------------------- */
+
 .image-card {
-  position: relative;
-  height: 450px; /* was 400px */
-  border-radius: 12px;
-  overflow: hidden;
+  position: relative;                         /* allows layering */
+  height: 450px;                              /* height of banner */
+  border-radius: 12px;                        /* rounded corners */
+  overflow: hidden;                           /* hides overflow */
   background-image: url('images/primary_productivity.png');
-  background-size: cover;
-  background-position: center;
+  background-size: cover;                     /* stretch to fill */
+  background-position: center;                /* center the image */
 }
 
 .image-card::before {
-  content: "";
+  content: "";                                /* creates overlay layer */
   position: absolute;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* dim overlay */
+  inset: 0;                                   /* cover entire card */
+  background-color: rgba(0, 0, 0, 0.5);       /* dark transparent overlay */
 }
 
+/* ---------------------------------- */
+/* OVERLAY TEXT ON HERO IMAGE CARD   */
+/* ---------------------------------- */
+
 .overlay-card {
-  position: relative;
-  z-index: 2;
+  position: relative;                         /* stacks above ::before */
+  z-index: 2;                                 /* ensures it's on top */
   padding: 2rem;
-  color: white; /* <-- makes all text inside white */
-  display: flex;
+  color: white;                               /* default text color */
+  display: flex;                              /* center content */
   flex-direction: column;
   justify-content: center;
   height: 100%;
 }
 
 .overlay-card h2 {
-  font-size: 1.6rem; /* <-- larger headline */
+  font-size: 1.6rem;                          /* headline size */
   font-weight: 400;
   margin-bottom: 1rem;
-  color: white; /* ensures title is white */
+  color: white;
 }
 
 .overlay-card p {
-  font-size: 1.125rem; /* Try 1.4rem or larger if needed */
-  line-height: 1.6;
+  font-size: 1.125rem;                        /* paragraph size */
+  line-height: 1.6;                           /* improve readability */
   margin-bottom: 1.5rem;
   color: white;
 }
 
+/* ---------------------------------- */
+/* BUTTONS (Primary and Secondary)   */
+/* ---------------------------------- */
+
 .btn-primary,
 .btn-secondary {
   display: inline-block;
-  padding: 0.6rem 1.2rem;       /* Larger padding = bigger button */
+  padding: 0.6rem 1.2rem;                     /* button padding */
   margin-right: 1rem;
   border-radius: 8px;
-  font-size: 1rem;           /* Larger font */
+  font-size: 1rem;                            /* text size */
   text-decoration: none;
-  background-color: #0271d2;    /* Blue background */
-  color: white;                 /* White text */
+  background-color: #0271d2;                 /* NOAA blue */
+  color: white;
   border: none;
   transition: background-color 0.2s ease-in-out;
 }
 
 .btn-primary:hover,
 .btn-secondary:hover {
-  background-color: #004785;    /* Darker blue on hover */
+  background-color: #004785;                 /* darker on hover */
   color: white;
 }
 
+/* ---------------------------------- */
+/* NEWS CARD (Right-hand homepage)   */
+/* ---------------------------------- */
+
 .news-card {
-  height: 450px;
-  background-color: #f9fafc;
+  height: 450px;                              /* matches image card */
+  background-color: #f9fafc;                 /* light neutral */
   border-radius: 12px;
   padding: 2rem;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-  font-size: 1.15rem;  /* Increase base font size */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);  /* subtle elevation */
+  font-size: 1.15rem;
   line-height: 1.7;
-  overflow-y: auto;
+  overflow-y: auto;                           /* scrolls when full */
 }
 
 .news-header {
-  display: flex;
+  display: flex;                              /* aligns title and link */
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1.5rem;
@@ -114,7 +134,7 @@
 }
 
 .news-item strong {
-  font-size: 1.05rem;
+  font-size: 1.05rem;                         /* emphasize date/title */
 }
 
 .news-item a {
@@ -127,79 +147,78 @@
 }
 
 .news-date {
-  font-size: 1rem;     /* Slightly larger date */
+  font-size: 1rem;
   color: #555;
   margin-top: 0.4rem;
 }
 
 .news-title {
   font-weight: bold;
-  font-size: 1.1rem;  /* Larger title */
+  font-size: 1.1rem;
   margin-bottom: 0.4rem;
   margin-top: 0;
-  color: #014077; 
+  color: #014077;                            /* deep ocean blue */
 }
 
-/* bottom-row sub-cards */
+/* ---------------------------------- */
+/* GENERAL PURPOSE CARD STYLING      */
+/* ---------------------------------- */
+
 .card {
-  background: white;
-  border-radius: 0.75rem;
-  padding: 1.5rem;
-  box-shadow: 0 0 12px rgba(0,0,0,0.05);
+  background: white;                          /* card background */
+  border-radius: 0.75rem;                     /* rounded corners */
+  padding: 1.5rem;                            /* interior spacing */
+  box-shadow: 0 0 12px rgba(0,0,0,0.05);      /* subtle shadow */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  font-size: 1rem;                            /* base text size */
+  line-height: 1.4;                           /* improve readability */
 }
 
 .card .btn-primary {
-  margin-top: auto;
-  align-self: start;
+  margin-top: auto;                           /* pushes button to bottom */
+  align-self: start;                          /* left-aligns button */
 }
 
-/* ——— Increase overall card text size ——— */
-.card {
-  font-size: 1rem;       /* ~18px; adjust up/down as needed */
-  line-height: 1.4;          /* improve readability */
-}
-
-/* ——— Make the card titles larger & darker ——— */
 .card h3 {
-  font-size: 1.25rem;         /* ~24px; feel free to tweak */
-  font-weight: 700;          /* bolden the title */
-  color: #1a1a1a;            /* a deep charcoal; darker than default */
-  margin-bottom: 0.5rem;     /* add some breathing room */
+  font-size: 1.25rem;                         /* larger title */
+  font-weight: 700;                           /* bold */
+  color: #1a1a1a;                             /* dark grey */
+  margin-bottom: 0.5rem;                      /* spacing below title */
 }
 
-/* ——— Tweak paragraph spacing ——— */
 .card p {
-  margin-bottom: 1rem;       /* separate text from the button */
-  color: #333;               /* slightly lighter than the title */
+  margin-bottom: 1rem;                        /* spacing before button */
+  color: #333;                                /* medium-dark text */
 }
 
-/* For data catalog */
+/* ---------------------------------- */
+/* FILTER BUTTONS & PANELS           */
+/* ---------------------------------- */
+
 .filter-btn {
-  background: #e6e6e6;
+  background: #e6e6e6;                        /* light grey background */
   border: none;
-  border-radius: 5px;
-  padding: 0.5rem 1rem;
+  border-radius: 5px;                         /* rounded corners */
+  padding: 0.5rem 1rem;                       /* button size */
   margin-right: 0.5rem;
   font-size: 0.95rem;
-  cursor: pointer;
+  cursor: pointer;                            /* pointer on hover */
 }
 
 .filter-btn:hover {
-  background: #d0d0d0;
+  background: #d0d0d0;                        /* slightly darker on hover */
 }
 
 .category-filter {
-  background-color: #f5f5f5;
-  padding: 20px;
-  border-radius:20px;
+  background-color: #f5f5f5;                  /* light background */
+  padding: 20px;                              /* spacing inside */
+  border-radius: 20px;                        /* rounded panel */
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;   /* horizontal centering */
-  align-items: center;       /* vertical centering */
-  margin-bottom: 20px;
+  justify-content: center;                    /* center horizontally */
+  align-items: center;                        /* center vertically */
   margin-bottom: 20px;
   text-align: center;
   line-height: 20px;
@@ -208,13 +227,13 @@
 
 .category-filter label {
   font-size: 1rem;
-  display: inline-flex;    /* controls the horizontal position of text */
+  display: inline-flex;                       /* keeps text and radio aligned */
   align-items: center;
-  gap: 0.4rem;
+  gap: 0.4rem;                                /* spacing between text and radio */
   cursor: pointer;
   white-space: nowrap;
   padding: 0;
-  margin: 0 0.75rem;
+  margin: 0 0.75rem;                          /* horizontal spacing */
   background: none;
   border: none;
   border-radius: 0;
@@ -222,37 +241,40 @@
 }
 
 .category-filter input[type="radio"] {
-  transform: scale(0.9); /* or 0.85 if you want it even smaller */
+  transform: scale(0.9);                      /* slightly smaller radio */
 }
 
-/* Styling for the title column toggle */
+/* ---------------------------------- */
+/* DATA CATALOG TOGGLES & DROPDOWNS  */
+/* ---------------------------------- */
+
 td.title-toggle {
-  cursor: pointer;
-  color: #007bff;
-  text-decoration: underline;
-}
-td.title-toggle:hover {
-  color: #0056b3;
+  cursor: pointer;                           /* clickable cell */
+  color: #007bff;                            /* blue text */
+  text-decoration: underline;                /* looks like a link */
 }
 
-/* Styling for the expanded description row */
+td.title-toggle:hover {
+  color: #0056b3;                            /* darker on hover */
+}
+
 .catalog-description {
   padding: 1rem;
-  font-size: 0.95rem;
-  color: #444;
-  background-color: #f9f9f9;
-  border-top: 1px solid #ddd;
+  font-size: 0.95rem;                        /* readable size */
+  color: #444;                               /* dark grey */
+  background-color: #f9f9f9;                 /* soft background */
+  border-top: 1px solid #ddd;                /* separator line */
 }
 
 .erddap-select {
   padding: 0.3rem;
   font-size: 0.95rem;
   border-radius: 4px;
-  border: 1px solid #ccc;
+  border: 1px solid #ccc;                    /* standard dropdown border */
 }
 
 .access-buttons {
-  text-align: center;
+  text-align: center;                        /* center-aligns buttons in cell */
 }
 
 .access-dropdown {
@@ -262,12 +284,13 @@ td.title-toggle:hover {
   border-radius: 6px;
   font-weight: 600;
   color: #fff;
-  background-color: #0271d2;
+  background-color: #0271d2;                /* NOAA blue */
   border: none;
   appearance: none;
   cursor: pointer;
   text-align: center;
 
+  /* adds a downward arrow icon */
   background-image: url("data:image/svg+xml,%3Csvg%20width%3D'12'%20height%3D'12'%20xmlns%3D'http%3A//www.w3.org/2000/svg'%3E%3Cpath%20d%3D'M2%204l4%204%204-4'%20stroke%3D'%23fff'%20fill%3D'none'%20stroke-width%3D'1.5'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: right 0.75rem center;
@@ -276,7 +299,7 @@ td.title-toggle:hover {
 
 .access-dropdown:focus {
   outline: none;
-  box-shadow: 0 0 0 2px rgba(2, 113, 210, 0.3);
+  box-shadow: 0 0 0 2px rgba(2, 113, 210, 0.3); /* blue focus ring */
 }
 
 .key-filters {
@@ -318,50 +341,55 @@ td.title-toggle:hover {
   border-color: #dee2e6 #dee2e6 #fff;
 }
 
+/* ---------------------------------- */
+/* ACCORDIONS & DETAILS ELEMENTS     */
+/* ---------------------------------- */
+
 .full-width-accordion .accordion {
-  width: 100%;
+  width: 100%;                               /* ensures full width container */
 }
 
 .full-width-accordion .accordion-item {
-  width: 100%;
+  width: 100%;                               /* each accordion item spans full width */
 }
 
 .full-width-accordion .accordion-body {
-  max-width: 100%;
+  max-width: 100%;                           /* remove any internal width restriction */
 }
 
 .full-width-accordion {
   padding: 0;
-  margin: 0;
+  margin: 0;                                 /* reset spacing */
 }
 
 /* Style for <details> and <summary> blocks */
 details {
-  background-color: #f8f9fa;
+  background-color: #f8f9fa;                 /* matches Lux theme */
   padding: 1rem;
   margin-bottom: 1rem;
   border-radius: 0.5rem;
-  border: 1px solid #dee2e6;
-  color: #212529;            /* Matches Lux theme text color */
-  font-size: 1.1rem;         /* Adjust as needed */
+  border: 1px solid #dee2e6;                 /* light border */
+  color: #212529;                            /* base text color */
+  font-size: 1.1rem;                         /* slightly larger text */
 }
 
 details summary {
-  color: #212529;            /* Matches Lux for headings */
-  font-weight: 600;
+  color: #212529;
+  font-weight: 600;                          /* bold summary */
   font-size: 1.2rem;
-  cursor: pointer;
+  cursor: pointer;                           /* pointer cursor on hover */
 }
 
 details a {
-  color: #0d6efd;             /* Lux default link color */
-  text-decoration: underline; /* Optional, makes links obvious */
+  color: #0d6efd;                            /* link color */
+  text-decoration: underline;                /* underline to indicate link */
 }
 
 details a:hover {
-  color: #0a58ca;             /* Lux hover color */
-  text-decoration: none;
+  color: #0a58ca;                            /* hover color */
+  text-decoration: none;                     /* remove underline on hover */
 }
+
 
 .erddap-dropdown {
   background-color: #f5f5f5;
@@ -461,49 +489,53 @@ details a:hover {
   cursor: pointer;
 }
 
+/* ---------------------------------- */
+/* MODAL (Lightbox Image Viewer)     */
+/* ---------------------------------- */
+
 .modal {
-  display: none;
+  display: none;                              /* hidden by default */
   position: fixed;
-  z-index: 9999;
+  z-index: 9999;                              /* highest layer */
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  padding-top: 8rem;
-  background-color: rgba(0, 0, 0, 0.6);
-  overflow-y: auto;         /* page scrolls when content is tall */
-  box-sizing: border-box;   /* keeps padding from overflowing */
+  padding-top: 8rem;                          /* vertical spacing from top */
+  background-color: rgba(0, 0, 0, 0.6);       /* dark semi-transparent bg */
+  overflow-y: auto;                           /* scroll if needed */
+  box-sizing: border-box;                     /* include padding in size */
 }
 
 .modal-content {
   background-color: white;
   margin: auto;
   padding: 2rem;
-  padding-top: 0 !important;
-  border-radius: 0.5rem;
-  max-width: 900px;       /* wider modal */
+  padding-top: 0 !important;                  /* override if necessary */
+  border-radius: 0.5rem;                      /* rounded corners */
+  max-width: 900px;
   width: 100%;
   position: relative;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-  overflow: visible;       /* no internal scrollbars */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* soft outer glow */
+  overflow: visible;                          /* prevent scroll inside */
 }
 
 .modal-content h2 {
-  margin-bottom: -2rem;
+  margin-bottom: -2rem;                       /* reduce gap */
 }
 
 .close-btn {
   position: absolute;
   top: 1rem;
   right: 1rem;
-  color: #888;
+  color: #888;                                /* muted grey */
   font-size: 1.5rem;
-  cursor: pointer;
+  cursor: pointer;                            /* clickable icon */
 }
 
 .modal.show {
-  display: block;
-  animation: fadeIn 0.3s ease-in-out;
+  display: block;                             /* makes modal visible */
+  animation: fadeIn 0.3s ease-in-out;         /* fade-in animation */
 }
 
 @keyframes fadeIn {
@@ -512,7 +544,7 @@ details a:hover {
 }
 
 .modal-section {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;                      /* vertical spacing */
 }
 
 .modal-section h4 {
@@ -521,26 +553,25 @@ details a:hover {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  color: #003f5c;
+  color: #003f5c;                             /* dark blue */
 }
 
-/* Reduce paragraph spacing too */
 .modal-section p {
-  margin: 0;                  /* eliminate default p spacing */
-  line-height: 1.2;           /* slightly tighter line spacing */
+  margin: 0;
+  line-height: 1.2;
   font-size: 0.95rem;
 }
 
 .modal-columns {
   display: grid;
-  grid-template-columns: 400px 400px; /* Two side-by-side columns */
-  gap: 2rem;
+  grid-template-columns: 400px 400px;         /* 2-column layout */
+  gap: 2rem;                                  /* space between columns */
   margin-top: 1rem;
 }
 
 .modal-column {
   display: flex;
-  flex-direction: column;
+  flex-direction: column;                     /* vertical stack */
 }
 
 .modal-column h4 {
@@ -554,12 +585,12 @@ details a:hover {
 .modal-column p {
   font-size: 0.95rem;
   line-height: 1.4;
-  margin-bottom: 0.5;
+  margin-bottom: 0.5rem;
 }
 
 .modal-column .btn {
   margin-top: auto;
-  align-self: flex-end;
+  align-self: flex-end;                       /* right-align button */
 }
 
 .modal-top-image {
@@ -570,21 +601,25 @@ details a:hover {
   padding-top: 1.5rem;
 }
 
+/* ---------------------------------- */
+/* TUTORIAL GRID + CARD STYLING      */
+/* ---------------------------------- */
+
 .tutorial-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
-  max-width: 1200;
-  margin: 0 auto;
+  display: flex;                              /* horizontal card layout */
+  flex-wrap: wrap;                            /* wrap to next line if needed */
+  gap: 2rem;                                  /* space between cards */
+  justify-content: center;                    /* center on page */
+  max-width: 1200px;                          /* container width */
+  margin: 0 auto;                             /* center in page */
 }
 
 .tutorial-card {
-  background: white;
-  border-radius: 10px;
+  background: white;                          /* card bg */
+  border-radius: 10px;                        /* rounded corners */
   padding: 1rem;
-  width: 350px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 350px;                               /* fixed card width */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);     /* subtle shadow */
   display: flex;
   flex-direction: column;
 }
@@ -592,26 +627,26 @@ details a:hover {
 .tutorial-card img {
   width: 100%;
   height: 180px;
-  object-fit: cover;
+  object-fit: cover;                          /* maintain aspect ratio */
   border-radius: 6px;
   margin-bottom: 1rem;
-  cursor: zoom-in;
-  transition: transform 0.2s ease;
+  cursor: zoom-in;                            /* indicates enlarging behavior */
+  transition: transform 0.2s ease;            /* smooth hover effect */
 }
 
 .tutorial-card img:hover {
-  transform: scale(1.02);
+  transform: scale(1.02);                     /* slight zoom on hover */
 }
 
 .tags {
   font-size: 0.8rem;
   font-weight: bold;
-  color: #555;
-  background: #e0e7ff;
-  padding: 0.3rem 0.5rem;
+  color: #555;                                 /* dark text */
+  background: #e0e7ff;                         /* light blue background */
+  padding: 0.3rem 0.5rem;                      /* pill shape */
   border-radius: 5px;
   margin-bottom: 0.5rem;
-  display: inline-block;
+  display: inline-block;                       /* makes it inline but block-like */
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
@@ -624,9 +659,13 @@ details a:hover {
 
 .tutorial-card p {
   font-size: 0.85rem;
-  color: #444;
+  color: #444;                                 /* dark gray */
   margin: 0.25rem 0;
 }
+
+/* ---------------------------------- */
+/* STACKED INFO BLOCKS               */
+/* ---------------------------------- */
 
 .stacked-info {
   width: 100%;
@@ -635,20 +674,24 @@ details a:hover {
 }
 
 .info-block {
-  padding: 2rem 4vw; /* Add horizontal breathing room */
-  border-radius: 1rem;
+  padding: 2rem 4vw;                           /* add horizontal breathing room */
+  border-radius: 1rem;                         /* rounded edges */
   box-shadow: none;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;                 /* top separator */
+  border-bottom: 1px solid #ddd;              /* bottom separator */
 }
 
 .info-blue {
-  background-color: #eaf4fb;
+  background-color: #eaf4fb;                  /* NOAA-like light blue */
 }
 
 .info-gray {
-  background-color: #f3f3f3;
+  background-color: #f3f3f3;                  /* neutral background */
 }
+
+/* ---------------------------------- */
+/* ABOUT / TEAM CARDS                */
+/* ---------------------------------- */
 
 .about-card {
   background: #eaf4fb;
@@ -658,28 +701,21 @@ details a:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  font-size: 1rem;                             /* base font size */
+  line-height: 1.4;                            /* improved readability */
 }
 
-/* ——— Increase overall card text size ——— */
-.about-card {
-  font-size: 1rem;       /* ~18px; adjust up/down as needed */
-  line-height: 1.4;          /* improve readability */
-}
-
-/* ——— Make the card titles larger & darker ——— */
 .about-card h3 {
-  font-size: 1.25rem;         /* ~24px; feel free to tweak */
-  font-weight: 700;          /* bolden the title */
-  color: #1a1a1a;            /* a deep charcoal; darker than default */
-  margin-bottom: 0.5rem;     /* add some breathing room */
+  font-size: 1.25rem;                          /* title size */
+  font-weight: 700;
+  color: #1a1a1a;                              /* deep charcoal */
+  margin-bottom: 0.5rem;
 }
 
-/* ——— Tweak paragraph spacing ——— */
 .about-card p {
-  margin-bottom: 1rem;       /* separate text from the button */
-  color: #333;               /* slightly lighter than the title */
+  margin-bottom: 1rem;
+  color: #333;                                 /* dark grey text */
 }
-
 
 .team-card {
   background: #eaf4fb;
@@ -689,24 +725,18 @@ details a:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  font-size: 1rem;
+  line-height: 1.4;
 }
 
-/* ——— Increase overall card text size ——— */
-.team-card {
-  font-size: 1rem;       /* ~18px; adjust up/down as needed */
-  line-height: 1.4;          /* improve readability */
-}
-
-/* ——— Make the card titles larger & darker ——— */
 .team-card h3 {
-  font-size: 1.25rem;         /* ~24px; feel free to tweak */
-  font-weight: 700;          /* bolden the title */
-  color: #1a1a1a;            /* a deep charcoal; darker than default */
-  margin-bottom: 0.5rem;     /* add some breathing room */
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 0.5rem;
 }
 
-/* ——— Tweak paragraph spacing ——— */
 .team-card p {
-  margin-bottom: 1rem;       /* separate text from the button */
-  color: #333;               /* slightly lighter than the title */
+  margin-bottom: 1rem;
+  color: #333;
 }
