@@ -258,5 +258,17 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+
+  // Enable <select class="access-dropdown"> to open links
+  document.querySelectorAll(".access-dropdown").forEach(dropdown => {
+    dropdown.addEventListener("change", function () {
+      const selected = this.options[this.selectedIndex];
+      const url = selected.getAttribute("data-url");
+      if (url) {
+        window.open(url, "_blank");
+        this.selectedIndex = 0;
+      }
+    });
+  });
 });
 </script>
