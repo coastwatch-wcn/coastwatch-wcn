@@ -23,7 +23,7 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
@@ -66,6 +66,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
 
 <link rel="stylesheet" href="styles.css">
@@ -194,42 +197,34 @@ View and download over 800 regional and global datasets, including satellite dat
 </div>
 <!-- Right News Card -->
 <div class="news-card">
-<div style="margin-bottom: 1rem" ;="" class="news-header">
-  <h3 style="margin 0;">News &amp; Events</h3>
-  <a href="#">View Archive</a>
+<div class="news-header" style="margin-bottom: 1rem;">
+<h3 style="margin: 0;">
+News &amp; Events
+</h3>
+<p><a href="./news_archive.html">View Archive</a></p>
 </div>
-<div class="news-item">
-<p class="news-title">
-New Publication on Alexandrium catenella Blooms
-</p>
-<p>
-Check out the <a href="https://www.sciencedirect.com/science/article/pii/S0301479725010187?via%3Dihub">new paper</a> with CoastWatch West Coast co-authors: Application of dinoflagellate-specific satellite models to aid bloom monitoring in the Bering and Chukchi seas.
-</p>
-<p class="news-date">
-March 24, 2025
-</p>
+<div id="a6bec210" class="cell" data-execution_count="1">
+<div class="cell-output cell-output-display">
+
+    <div class="news-item">
+      <p class="news-title">Job Opportunity: Development Assistant </p>
+      <p><a href="“https://coastwatch.pfeg.noaa.gov/info/UCSC_CW_Specialist_Flyer2025_V2.pdf”" target="“_blank”">Job opportunity</a>&nbsp;at UCSC: Development assistant for satellite products.</p>
+      <p class="news-date">27 Jun. 2025</p>
+    </div>
+    
+    <div class="news-item">
+      <p class="news-title">Job Opportunity: Cloud Specialist</p>
+      <p><a href="“https://coastwatch.pfeg.noaa.gov/info/UCSC_CW_ProjSci_Flyer2025_v2.pdf”" target="“_blank”">Job opportunity</a>&nbsp;at UCSC: Cloud migration of environmental data.</p>
+      <p class="news-date">27 Jun. 2025</p>
+    </div>
+    
+    <div class="news-item">
+      <p class="news-title">New Publication on Alexandrium catenella Blooms</p>
+      <p>Check out the&nbsp;<a href="“https://doi.org/10.1016/j.jenvman.2025.125042”" target="“_blank”">new paper</a>&nbsp;with CoastWatch West Coast co-authors: Application of dinoflagellate-specific satellite models to aid Alexandrium catenella bloom monitoring in the Bering and Chukchi seas.</p>
+      <p class="news-date">24 Mar. 2025</p>
+    </div>
+    
 </div>
-<div class="news-item">
-<p class="news-title">
-Spray Glider Dataset Available
-</p>
-<p>
-The <a href="https://coastwatch.pfeg.noaa.gov/wcn/erddap/tabledap/scrippsGlidersSQ.graph">Spray Glider dataset</a> from Scripps Institution of Oceanography is available for download on ERDDAP.
-</p>
-<p class="news-date">
-March 14, 2025
-</p>
-</div>
-<div class="news-item">
-<p class="news-title">
-WCN Project Dashboard Live
-</p>
-<p>
-Visit the CoastWatch West Coast Node (WCN) <a href="#">projects dashboard</a> for descriptions of and links to current projects.
-</p>
-<p class="news-date">
-February 21, 2025
-</p>
 </div>
 </div>
 </div>
@@ -249,9 +244,9 @@ The ERDDAP data server provides a simple, consistent way to subset and download 
 Software
 </h3>
 <p>
-The Environmental Data Connector (EDC) and Xtractomatic data extraction scripts make it easy to discover and extract data from online servers and download them directly into ArcGIS, R, MatLab, and Excel.
+Explore tools for accessing and analyzing satellite and oceanographic data via ERDDAP, including R and Python packages and the CoastWatch Utilities software for different data formats.
 </p>
-<p><a href="#" class="btn-primary">EDC</a> <a href="#" class="btn-secondary">Xtractomatic</a></p>
+<p><a href="./tools.html" class="btn-primary">Software Tools</a></p>
 </div>
 </div>
 
