@@ -10,6 +10,56 @@
   max-height: none;       /* disables any browser-imposed limit */
 }
 
+.navbar {
+  background-color: #003366 !important;  /* NOAA deep blue */
+  border-bottom: none;
+}
+
+.navbar a,
+.navbar-brand,
+.navbar-nav .nav-link {
+  color: white !important; /* Make links white */
+}
+
+.navbar a:hover,
+.navbar-nav .nav-link:hover {
+  color: #aad8ff !important; /* Light blue on hover */
+}
+
+/* Center the dropdown under its navbar item */
+.navbar .dropdown-menu {
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  right: auto !important;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  background-color: white;
+  border-radius: 10px;
+  border: none;
+  padding: 0.25rem 0; /* Reduce vertical padding */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Dropdown items */
+.dropdown-menu .dropdown-item {
+  background-color: transparent;
+  color: #003366 !important;
+  padding: 0.5rem 1rem;       /* Keep this symmetric */
+  margin: 0;                 /* Remove margin to prevent overflow */
+  border-radius: 0;          /* No pill shape */
+  transition: background-color 0.2s ease-in-out;
+  width: 100%;               /* Ensures it fills dropdown width */
+  box-sizing: border-box;    /* Prevents overflow from padding */
+}
+
+/* Hover effect */
+.dropdown-menu .dropdown-item:hover {
+  background-color: #e6f4ff;
+  color: #003366 !important;
+}
+
 /* ---------------------------------- */
 /* HERO IMAGE CARD (Homepage banner) */
 /* ---------------------------------- */
