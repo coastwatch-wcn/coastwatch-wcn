@@ -38,8 +38,6 @@ website:
             href: customer_survey.qmd
           - text: News Archive
             href: news_archive.qmd
-          - text: Our Team
-            href: team.qmd
 
 format:
   html:

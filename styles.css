@@ -61,6 +61,23 @@
 }
 
 /* ---------------------------------- */
+/* OVERRIDE DEFAULT HYPERLINKS        */
+/* ---------------------------------- */
+
+/* Global link style override */
+a {
+  color: #0054a6;             /* NOAA blue */
+  text-decoration: none;      /* Removes underline */
+  font-weight: 500;           /* Optional: make it stand out a bit */
+}
+
+/* Hover behavior for all links */
+a:hover {
+  text-decoration: underline; /* Optional: show underline on hover */
+  color: #003366;             /* Darker blue on hover */
+}
+
+/* ---------------------------------- */
 /* HERO IMAGE CARD (Homepage banner) */
 /* ---------------------------------- */
 
@@ -744,7 +761,7 @@ details a:hover {
 /* ---------------------------------- */
 
 .about-card {
-  background: #eaf4fb;
+  background: #f8f9fa;
   border-radius: 0.75rem;
   padding: 1.5rem;
   box-shadow: 0 0 12px rgba(0,0,0,0.05);
@@ -815,4 +832,60 @@ button.btn-primary {
 
 button.btn-primary:hover {
   background-color: #005da8;
+}
+
+/* ---------------------------------- */
+/* REGIONAL NODE COLOR CODES          */
+/* ---------------------------------- */
+
+.central-op {
+  color: black;
+}
+
+.great-lakes {
+  color: #39b54a; /* green */
+}
+.great-lakes:hover {
+  text-decoration: underline;
+  color: #2e8f3f;            
+}
+
+.central-pacific {
+  color: #0054a6; /* navy blue */
+}
+
+.east-coast {
+  color: #ec008c; /* magenta */
+}
+.east-coast:hover {
+  text-decoration: underline;
+  color: #c80178;            
+}
+
+.gulf-caribbean {
+  color: #00aeef; /* bright cyan */
+}
+.gulf-caribbean:hover {
+  text-decoration: underline;
+  color: #0293c8;            
+}
+
+.water-prediction {
+  color: #8c6239; /* brown */
+}
+.water-prediction:hover {
+  text-decoration: underline;
+  color: #65472a;            
+}
+
+.polarwatch {
+  color: #92278f; /* purple */
+}
+.polarwatch:hover {
+  text-decoration: underline;
+  color: #782175;            
+}
+
+.west-coast {
+  color: #f7941d; /* orange */
 }
