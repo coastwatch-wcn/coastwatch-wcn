@@ -137,7 +137,7 @@ Use the step-by-step filters below to narrow down to your ideal dataset.
 import pandas as pd
 from IPython.display import display, HTML
 
-df = pd.read_csv("data_catalog_excel.csv")
+df = pd.read_csv("spreadsheets/data_catalog_excel.csv")
 
 # Clean linebreaks and ensure no missing Access HTML
 df["Access"] = df["Access"].fillna("").astype(str).str.replace(r"\\n", "", regex=True).str.strip()

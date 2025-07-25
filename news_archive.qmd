@@ -19,7 +19,7 @@ import pandas as pd
 from IPython.display import display, HTML
 
 # Load and parse
-df = pd.read_excel("news_archive.xlsx")
+df = pd.read_excel("spreadsheets/news_archive.xlsx")
 df['Date'] = pd.to_datetime(df['Date'], format='%d-%b-%y', errors='coerce')
 df = df[df['Date'].notna()]
 df = df.sort_values(by='Date', ascending=False)

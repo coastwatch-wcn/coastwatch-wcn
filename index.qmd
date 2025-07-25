@@ -33,7 +33,7 @@ import pandas as pd
 from IPython.display import display, HTML
 
 # Load Excel
-df = pd.read_excel("news_archive.xlsx")
+df = pd.read_excel("spreadsheets/news_archive.xlsx")
 
 # Parse using known format: 27-Jun-25
 df['Date'] = pd.to_datetime(df['Date'], format='%d-%b-%y', errors='coerce')
