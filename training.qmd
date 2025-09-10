@@ -6,7 +6,6 @@ format:
     toc: false
 page-layout: full
 ---
-Learn about satellite data and how to integrate it into your work
 
 <div class="stacked-info">
 

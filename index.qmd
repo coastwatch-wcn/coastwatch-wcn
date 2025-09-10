@@ -23,28 +23,39 @@ format:
 
 <!-- Right News Card -->
 ::: {.news-card}
-<div style="margin-bottom: 1rem"; class="news-header">
-  <h3 style="margin 0;">News & Events</h3>
-  <a href="#">View Archive</a>
+<div style="margin-bottom: 1rem;" class="news-header">
+  <h3 style="margin: 0;">News & Events</h3>
+  <a href="news_archive.qmd">View Archive</a>
 </div>
 
-<div class="news-item">
-  <p class="news-title">New Publication on Alexandrium catenella Blooms</p>
-  <p>Check out the <a href="https://www.sciencedirect.com/science/article/pii/S0301479725010187?via%3Dihub">new paper</a> with CoastWatch West Coast co-authors: Application of dinoflagellate-specific satellite models to aid bloom monitoring in the Bering and Chukchi seas.</p>
-  <p class="news-date">March 24, 2025</p>
-</div>
+```{python}
+import pandas as pd
+from IPython.display import display, HTML
 
-<div class="news-item">
-  <p class="news-title">Spray Glider Dataset Available</p>
-  <p>The <a href="https://coastwatch.pfeg.noaa.gov/wcn/erddap/tabledap/scrippsGlidersSQ.graph">Spray Glider dataset</a> from Scripps Institution of Oceanography is available for download on ERDDAP.</p>
-  <p class="news-date">March 14, 2025</p>
-</div>
+# Load Excel
+df = pd.read_excel("spreadsheets/news_archive.xlsx")
 
-<div class="news-item">
-  <p class="news-title">WCN Project Dashboard Live</p>
-  <p>Visit the CoastWatch West Coast Node (WCN) <a href="#">projects dashboard</a> for descriptions of and links to current projects.</p>
-  <p class="news-date">February 21, 2025</p>
-</div>
+# Parse using known format: 27-Jun-25
+df['Date'] = pd.to_datetime(df['Date'], format='%d-%b-%y', errors='coerce')
+df = df[df['Date'].notna()]
+df = df.sort_values(by='Date', ascending=False)
+
+# Limit to top 3
+latest_news = df.head(3)
+
+html = ""
+for _, row in latest_news.iterrows():
+    day = row['Date'].day
+    month_year = row['Date'].strftime('%b. %Y')
+    html += f"""
+    <div class='news-item'>
+      <p class='news-title'>{row['Title']}</p>
+      <p>{row['Description']}</p>
+      <p class='news-date'>{day} {month_year}</p>
+    </div>
+    """
+display(HTML(html))
+```
 :::
 
 
@@ -63,8 +74,7 @@ format:
 
 ::: {.card}
 <h3>Software</h3>
-<p>The Environmental Data Connector (EDC) and Xtractomatic data extraction scripts make it easy to discover and extract data from online servers and download them directly into ArcGIS, R, MatLab, and Excel.</p>
-<a href="#" class="btn-primary">EDC</a>
-<a href="#" class="btn-secondary">Xtractomatic</a>
+<p>Explore tools for accessing and analyzing satellite and oceanographic data via ERDDAP, including R and Python packages and the CoastWatch Utilities software for different data formats.</p>
+<a href="tools.qmd" class="btn-primary">Software Tools</a>
 :::
 :::

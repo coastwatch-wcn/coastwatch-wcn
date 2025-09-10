@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "ERDDAP Data Server"
 anchor-sections: false
 page-layout: full
 format:
@@ -11,7 +11,7 @@ format:
 
 ::: {style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 1rem; align-items: start; margin-top: 1rem;"}
 
-## ERDDAP Data Server
+## Getting Data is Easy
 
 <!-- Left Card -->
 ::: {.card .erddap-card style="padding: 2rem; background-color: #f8f9fa; border-radius: 1rem;"}

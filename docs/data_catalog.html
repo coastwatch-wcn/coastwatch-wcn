@@ -235,7 +235,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="mb-3 mt-4">
 <p><button id="resetFilters" class="btn btn-outline-secondary"> Reset Filters</button></p>
 </div>
-<div id="e4de6df4" class="cell" data-execution_count="1">
+<div id="47efbd43" class="cell" data-execution_count="1">
 <div class="cell-output cell-output-display">
 
     </div></div><table id="catalogTable" class="table table-striped">
@@ -977,6 +977,18 @@ document.addEventListener("DOMContentLoaded", function () {
       const next = row?.nextElementSibling;
       if (next && next.classList.contains("detail-row")) {
         next.style.display = next.style.display === "none" ? "table-row" : "none";
+      }
+    });
+  });
+
+  // Enable <select class="access-dropdown"> to open links
+  document.querySelectorAll(".access-dropdown").forEach(dropdown => {
+    dropdown.addEventListener("change", function () {
+      const selected = this.options[this.selectedIndex];
+      const url = selected.getAttribute("data-url");
+      if (url) {
+        window.open(url, "_blank");
+        this.selectedIndex = 0;
       }
     });
   });

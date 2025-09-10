@@ -137,7 +137,7 @@ Use the step-by-step filters below to narrow down to your ideal dataset.
 import pandas as pd
 from IPython.display import display, HTML
 
-df = pd.read_csv("data_catalog_excel.csv")
+df = pd.read_csv("spreadsheets/data_catalog_excel.csv")
 
 # Clean linebreaks and ensure no missing Access HTML
 df["Access"] = df["Access"].fillna("").astype(str).str.replace(r"\\n", "", regex=True).str.strip()
@@ -255,6 +255,18 @@ document.addEventListener("DOMContentLoaded", function () {
       const next = row?.nextElementSibling;
       if (next && next.classList.contains("detail-row")) {
         next.style.display = next.style.display === "none" ? "table-row" : "none";
+      }
+    });
+  });
+
+  // Enable <select class="access-dropdown"> to open links
+  document.querySelectorAll(".access-dropdown").forEach(dropdown => {
+    dropdown.addEventListener("change", function () {
+      const selected = this.options[this.selectedIndex];
+      const url = selected.getAttribute("data-url");
+      if (url) {
+        window.open(url, "_blank");
+        this.selectedIndex = 0;
       }
     });
   });
